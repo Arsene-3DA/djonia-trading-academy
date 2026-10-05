@@ -35,5 +35,9 @@
     if (event.key === "F12") {
       blockEvent(event);
     }
+
+    if (event.key === "PrintScreen") {
+      blockEvent(event);
+    }
   }, true);
 })();
