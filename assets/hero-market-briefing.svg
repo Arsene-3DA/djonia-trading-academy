@@ -1,0 +1,132 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 700" preserveAspectRatio="xMidYMid meet" role="img" aria-labelledby="title desc">
+  <title id="title">Scénario de marché annoté</title>
+  <desc id="desc">Graphique pédagogique montrant structure, liquidité, zone d'intérêt, confirmation, entrée, stop et objectif.</desc>
+  <defs>
+    <linearGradient id="panel" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#202d32"/>
+      <stop offset="1" stop-color="#182126"/>
+    </linearGradient>
+    <pattern id="grid" width="64" height="56" patternUnits="userSpaceOnUse">
+      <path d="M64 0H0V56" fill="none" stroke="#526166" stroke-width="1" opacity=".36"/>
+    </pattern>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="8" stdDeviation="12" flood-color="#0b1114" flood-opacity=".45"/>
+    </filter>
+  </defs>
+
+  <rect width="1200" height="700" rx="22" fill="url(#panel)"/>
+  <rect x="36" y="36" width="1128" height="628" rx="12" fill="#182126" stroke="#526166" stroke-opacity=".75"/>
+  <rect x="72" y="92" width="820" height="500" fill="url(#grid)"/>
+
+  <text x="72" y="70" fill="#eef1ee" font-family="IBM Plex Sans, Arial, sans-serif" font-size="20" font-weight="700">DJONIA / SCÉNARIO PÉDAGOGIQUE</text>
+  <text x="892" y="70" fill="#aab4b7" font-family="IBM Plex Sans, Arial, sans-serif" font-size="16" text-anchor="end">Structure + liquidité + risque</text>
+
+  <g stroke-linecap="round">
+    <line x1="72" y1="186" x2="892" y2="186" stroke="#d9a441" stroke-width="2" stroke-dasharray="8 8"/>
+    <text x="82" y="174" fill="#f0c766" font-family="IBM Plex Sans, Arial, sans-serif" font-size="15" font-weight="700">BSL / objectif</text>
+    <line x1="72" y1="492" x2="892" y2="492" stroke="#e16468" stroke-width="2" stroke-dasharray="8 8"/>
+    <text x="82" y="518" fill="#ef8f93" font-family="IBM Plex Sans, Arial, sans-serif" font-size="15" font-weight="700">SSL balayée</text>
+  </g>
+
+  <rect x="398" y="438" width="226" height="84" fill="#d9a441" fill-opacity=".15" stroke="#d9a441" stroke-width="2"/>
+  <rect x="640" y="320" width="106" height="66" fill="#33c795" fill-opacity=".13" stroke="#33c795" stroke-width="2" stroke-dasharray="6 5"/>
+
+  <g stroke-width="3">
+    <g stroke="#33c795" fill="#33c795">
+      <line x1="108" y1="468" x2="108" y2="406"/><rect x="99" y="424" width="18" height="28"/>
+      <line x1="156" y1="438" x2="156" y2="360"/><rect x="147" y="382" width="18" height="38"/>
+      <line x1="250" y1="414" x2="250" y2="330"/><rect x="241" y="350" width="18" height="46"/>
+      <line x1="348" y1="378" x2="348" y2="284"/><rect x="339" y="307" width="18" height="50"/>
+      <line x1="494" y1="514" x2="494" y2="414"/><rect x="485" y="444" width="18" height="54"/>
+      <line x1="542" y1="462" x2="542" y2="370"/><rect x="533" y="392" width="18" height="52"/>
+      <line x1="590" y1="412" x2="590" y2="314"/><rect x="581" y="340" width="18" height="50"/>
+      <line x1="638" y1="354" x2="638" y2="244"/><rect x="629" y="270" width="18" height="64"/>
+      <line x1="734" y1="344" x2="734" y2="258"/><rect x="725" y="282" width="18" height="44"/>
+      <line x1="782" y1="292" x2="782" y2="216"/><rect x="773" y="236" width="18" height="38"/>
+      <line x1="830" y1="248" x2="830" y2="170"/><rect x="821" y="194" width="18" height="34"/>
+    </g>
+    <g stroke="#e16468" fill="#e16468">
+      <line x1="204" y1="374" x2="204" y2="454"/><rect x="195" y="386" width="18" height="42"/>
+      <line x1="300" y1="302" x2="300" y2="392"/><rect x="291" y="326" width="18" height="46"/>
+      <line x1="396" y1="278" x2="396" y2="370"/><rect x="387" y="308" width="18" height="44"/>
+      <line x1="444" y1="352" x2="444" y2="528"/><rect x="435" y="374" width="18" height="114"/>
+      <line x1="686" y1="238" x2="686" y2="368"/><rect x="677" y="264" width="18" height="76"/>
+    </g>
+  </g>
+
+  <path d="M108 434L156 382L204 428L250 350L300 372L348 307L396 352L444 488L494 444L542 392L590 340L638 270L686 340L734 282L782 236L830 194" fill="none" stroke="#eef1ee" stroke-width="2" opacity=".48"/>
+
+  <!-- Les étiquettes sont dessinées après les bougies et protégées par un fond.
+       Les lignes de rappel gardent chaque mot à distance des chandeliers. -->
+  <g font-family="IBM Plex Sans, Arial, sans-serif" font-size="14" font-weight="700">
+    <g>
+      <line x1="248" y1="314" x2="250" y2="330" stroke="#6be0b5" stroke-width="1.5"/>
+      <rect x="218" y="284" width="60" height="28" rx="4" fill="#202d32" stroke="#33c795"/>
+      <text x="248" y="303" text-anchor="middle" fill="#6be0b5">HH</text>
+      <circle cx="250" cy="330" r="5" fill="#33c795"/>
+    </g>
+    <g>
+      <line x1="348" y1="272" x2="348" y2="284" stroke="#6be0b5" stroke-width="1.5"/>
+      <rect x="318" y="242" width="60" height="28" rx="4" fill="#202d32" stroke="#33c795"/>
+      <text x="348" y="261" text-anchor="middle" fill="#6be0b5">HH</text>
+      <circle cx="348" cy="284" r="5" fill="#33c795"/>
+    </g>
+    <g>
+      <line x1="300" y1="392" x2="300" y2="402" stroke="#6be0b5" stroke-width="1.5"/>
+      <rect x="270" y="404" width="60" height="28" rx="4" fill="#202d32" stroke="#33c795"/>
+      <text x="300" y="423" text-anchor="middle" fill="#6be0b5">HL</text>
+      <circle cx="300" cy="392" r="5" fill="#33c795"/>
+    </g>
+    <g>
+      <line x1="444" y1="528" x2="452" y2="540" stroke="#ef8f93" stroke-width="1.5"/>
+      <rect x="454" y="534" width="92" height="30" rx="4" fill="#202d32" stroke="#e16468"/>
+      <text x="500" y="554" text-anchor="middle" fill="#ef8f93">SWEEP</text>
+      <circle cx="444" cy="528" r="6" fill="#e16468"/>
+    </g>
+    <g>
+      <line x1="590" y1="304" x2="590" y2="314" stroke="#6be0b5" stroke-width="1.5"/>
+      <rect x="538" y="272" width="104" height="30" rx="4" fill="#202d32" stroke="#33c795"/>
+      <text x="590" y="292" text-anchor="middle" fill="#6be0b5">CHoCH</text>
+      <circle cx="590" cy="314" r="6" fill="#33c795"/>
+    </g>
+    <g>
+      <line x1="370" y1="552" x2="410" y2="492" stroke="#f0c766" stroke-width="1.5"/>
+      <rect x="150" y="536" width="220" height="32" rx="4" fill="#202d32" stroke="#d9a441"/>
+      <text x="260" y="557" text-anchor="middle" fill="#f0c766">POI · ZONE DE DEMANDE</text>
+    </g>
+    <g>
+      <line x1="746" y1="350" x2="758" y2="350" stroke="#6be0b5" stroke-width="1.5"/>
+      <rect x="760" y="334" width="72" height="32" rx="4" fill="#202d32" stroke="#33c795"/>
+      <text x="796" y="355" text-anchor="middle" fill="#6be0b5">FVG</text>
+    </g>
+  </g>
+
+  <g filter="url(#shadow)" font-family="IBM Plex Sans, Arial, sans-serif">
+    <rect x="922" y="112" width="206" height="430" rx="8" fill="#202d32" stroke="#526166"/>
+    <text x="946" y="150" fill="#eef1ee" font-size="18" font-weight="700">Lecture guidée</text>
+    <text x="946" y="178" fill="#aab4b7" font-size="13">Une décision en 5 contrôles</text>
+    <g font-size="14">
+      <circle cx="950" cy="226" r="13" fill="#eef1ee"/><text x="950" y="231" text-anchor="middle" fill="#182126" font-weight="700">1</text><text x="976" y="231" fill="#eef1ee">Contexte haussier</text>
+      <circle cx="950" cy="278" r="13" fill="#d9a441"/><text x="950" y="283" text-anchor="middle" fill="#182126" font-weight="700">2</text><text x="976" y="283" fill="#eef1ee">Liquidité balayée</text>
+      <circle cx="950" cy="330" r="13" fill="#33c795"/><text x="950" y="335" text-anchor="middle" fill="#182126" font-weight="700">3</text><text x="976" y="335" fill="#eef1ee">Structure confirmée</text>
+      <circle cx="950" cy="382" r="13" fill="#eef1ee"/><text x="950" y="387" text-anchor="middle" fill="#182126" font-weight="700">4</text><text x="976" y="387" fill="#eef1ee">Risque calculé</text>
+      <circle cx="950" cy="434" r="13" fill="#e16468"/><text x="950" y="439" text-anchor="middle" fill="#182126" font-weight="700">5</text><text x="976" y="439" fill="#eef1ee">Invalidation écrite</text>
+    </g>
+    <line x1="946" y1="474" x2="1104" y2="474" stroke="#526166"/>
+    <text x="946" y="505" fill="#f0c766" font-size="14" font-weight="700">PAS DE GARANTIE</text>
+    <text x="946" y="527" fill="#aab4b7" font-size="12">Un scénario valide peut perdre.</text>
+  </g>
+
+  <g font-family="IBM Plex Sans, Arial, sans-serif" font-size="13" font-weight="700">
+    <line x1="638" y1="410" x2="836" y2="410" stroke="#33c795" stroke-width="2"/>
+    <rect x="840" y="394" width="72" height="32" rx="4" fill="#202d32" stroke="#33c795"/>
+    <text x="876" y="415" text-anchor="middle" fill="#6be0b5">ENTRÉE</text>
+    <line x1="638" y1="472" x2="848" y2="472" stroke="#e16468" stroke-width="2"/>
+    <rect x="852" y="456" width="48" height="32" rx="4" fill="#202d32" stroke="#e16468"/>
+    <text x="876" y="477" text-anchor="middle" fill="#ef8f93">SL</text>
+    <line x1="638" y1="186" x2="848" y2="186" stroke="#d9a441" stroke-width="2"/>
+    <rect x="852" y="170" width="48" height="32" rx="4" fill="#202d32" stroke="#d9a441"/>
+    <text x="876" y="191" text-anchor="middle" fill="#f0c766">TP</text>
+  </g>
+  <text x="72" y="628" fill="#aab4b7" font-family="IBM Plex Sans, Arial, sans-serif" font-size="13">Exemple pédagogique — niveaux et bougies fictives, conçus pour apprendre la séquence d’analyse.</text>
+</svg>

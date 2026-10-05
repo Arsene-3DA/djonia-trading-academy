@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1100 620" preserveAspectRatio="xMidYMid meet" role="img" aria-labelledby="title desc">
+  <title id="title">Divergence de Delta et absorption avancée</title>
+  <desc id="desc">Schéma Order Flow séparant prix, delta, absorption possible et limites de l’interprétation.</desc>
+  <defs><pattern id="ofGrid" width="44" height="40" patternUnits="userSpaceOnUse"><path d="M44 0H0V40" fill="none" stroke="#526166" opacity=".28"/></pattern></defs>
+  <rect width="1100" height="620" rx="18" fill="#182126"/>
+  <text x="42" y="52" fill="#eef1ee" font-family="IBM Plex Sans, Arial, sans-serif" font-size="22" font-weight="700">L’ORDRE DES BALEINES</text>
+  <text x="1058" y="52" text-anchor="end" fill="#aab4b7" font-family="IBM Plex Sans, Arial, sans-serif" font-size="14">Lecture Order Flow · jamais une identité certaine</text>
+  <g font-family="IBM Plex Sans, Arial, sans-serif">
+    <rect x="40" y="82" width="720" height="486" rx="8" fill="#202d32" stroke="#526166"/>
+    <rect x="66" y="120" width="668" height="250" fill="url(#ofGrid)"/>
+    <text x="66" y="108" fill="#aab4b7" font-size="13">PRIX</text>
+    <path d="M82 330L132 288L180 306L230 252L280 270L330 216L380 232L430 188L480 204L530 166L580 184L630 148L686 162L720 130" fill="none" stroke="#eef1ee" stroke-width="3"/>
+    <circle cx="630" cy="148" r="6" fill="#33c795"/><circle cx="720" cy="130" r="6" fill="#33c795"/>
+    <line x1="630" y1="148" x2="720" y2="130" stroke="#6be0b5" stroke-width="2"/>
+    <rect x="568" y="92" width="168" height="32" rx="4" fill="#182126" stroke="#33c795"/>
+    <text x="652" y="113" text-anchor="middle" fill="#6be0b5" font-size="13" font-weight="700">PRIX : NOUVEAU SOMMET</text>
+
+    <rect x="66" y="404" width="668" height="126" fill="#11191d" stroke="#526166"/>
+    <text x="66" y="393" fill="#aab4b7" font-size="13">DELTA CUMULÉ · MÊMES BORNES</text>
+    <path d="M82 506L132 480L180 490L230 458L280 470L330 438L380 448L430 424L480 438L530 414L580 430L630 410L686 432L720 426" fill="none" stroke="#d9a441" stroke-width="3"/>
+    <circle cx="630" cy="410" r="6" fill="#d9a441"/><circle cx="720" cy="426" r="6" fill="#e16468"/>
+    <line x1="630" y1="410" x2="720" y2="426" stroke="#ef8f93" stroke-width="2"/>
+    <rect x="526" y="474" width="202" height="34" rx="4" fill="#182126" stroke="#e16468"/>
+    <text x="627" y="496" text-anchor="middle" fill="#ef8f93" font-size="13" font-weight="700">DELTA : SOMMET INFÉRIEUR</text>
+
+    <line x1="690" y1="170" x2="690" y2="394" stroke="#aab4b7" stroke-width="1.5" stroke-dasharray="6 6"/>
+    <rect x="790" y="82" width="270" height="486" rx="8" fill="#d7e0de"/>
+    <text x="816" y="122" fill="#182126" font-size="17" font-weight="700">LECTURE EN 4 ÉTAPES</text>
+    <g font-size="13">
+      <rect x="816" y="150" width="218" height="72" rx="5" fill="#f8faf8" stroke="#aab4b7"/>
+      <text x="832" y="177" fill="#0b6b50" font-weight="700">1 · FAIT MESURÉ</text>
+      <text x="832" y="201" fill="#3d4c52">Prix ↑, Delta ne confirme pas.</text>
+      <rect x="816" y="236" width="218" height="72" rx="5" fill="#f8faf8" stroke="#aab4b7"/>
+      <text x="832" y="263" fill="#765610" font-weight="700">2 · HYPOTHÈSE</text>
+      <text x="832" y="287" fill="#3d4c52">Absorption possible.</text>
+      <rect x="816" y="322" width="218" height="72" rx="5" fill="#f8faf8" stroke="#aab4b7"/>
+      <text x="832" y="349" fill="#182126" font-weight="700">3 · CONFIRMATION</text>
+      <text x="832" y="373" fill="#3d4c52">Réaction de prix définie.</text>
+      <rect x="816" y="408" width="218" height="108" rx="5" fill="#182126"/>
+      <text x="832" y="437" fill="#ef8f93" font-weight="700">4 · LIMITE</text>
+      <text x="832" y="462" fill="#b9c3c4"><tspan x="832" dy="0">Ni l’auteur, ni son intention</tspan><tspan x="832" dy="20">ne sont confirmés. Aucun</tspan><tspan x="832" dy="20">signal automatique.</tspan></text>
+    </g>
+    <text x="40" y="596" fill="#aab4b7" font-size="12">Données fictives · la divergence dépend de la source, de l’agrégation et des bornes comparées.</text>
+  </g>
+</svg>

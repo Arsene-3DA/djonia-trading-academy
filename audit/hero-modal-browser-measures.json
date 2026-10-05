@@ -1,0 +1,72 @@
+{
+  "generatedAt": "2026-09-18",
+  "engine": "Chrome (navigateur réel)",
+  "hero": {
+    "intrinsicSize": "1200×700",
+    "objectFit": "contain",
+    "aspectRatio": "1200 / 700",
+    "breakpoints": [
+      { "width": 320, "rendered": "279×163", "overflowPixels": 0, "fullyInsideViewport": true, "croppingGuardPassed": true, "undersizedTouchTargets": 0 },
+      { "width": 375, "rendered": "334×195", "overflowPixels": 0, "fullyInsideViewport": true, "croppingGuardPassed": true, "undersizedTouchTargets": 0 },
+      { "width": 414, "rendered": "361×211", "overflowPixels": 0, "fullyInsideViewport": true, "croppingGuardPassed": true, "undersizedTouchTargets": 0 },
+      { "width": 768, "rendered": "715×417", "overflowPixels": 0, "fullyInsideViewport": true, "croppingGuardPassed": true },
+      { "width": 1024, "rendered": "683×398", "overflowPixels": 0, "fullyInsideViewport": true, "croppingGuardPassed": true },
+      { "width": 1440, "rendered": "671×392", "overflowPixels": 0, "fullyInsideViewport": true, "croppingGuardPassed": true },
+      { "width": 1920, "rendered": "778×454", "overflowPixels": 0, "fullyInsideViewport": true, "croppingGuardPassed": true }
+    ]
+  },
+  "svgGeometry": [
+    {
+      "name": "hero-market-briefing.svg",
+      "textNodes": 29,
+      "textOutsideViewBox": 0,
+      "textOverlaps": 0,
+      "protectedLabels": 10,
+      "minimumLabelPaddingPx": 7.2
+    },
+    {
+      "name": "analysis-workbench.svg",
+      "textNodes": 33,
+      "textOutsideViewBox": 0,
+      "textOverlaps": 0
+    },
+    {
+      "name": "risk-journal-sheet.svg",
+      "textNodes": 34,
+      "textOutsideViewBox": 0,
+      "textOverlaps": 0
+    }
+  ],
+  "modal": {
+    "desktop": {
+      "browserTabsBefore": 2,
+      "browserTabsAfter": 2,
+      "bodyScrollLocked": true,
+      "image": "1200×700",
+      "imageInsideStage": true,
+      "zoomTested": "125 %",
+      "focusTrapTarget": "imageZoomOut",
+      "escapeCloses": true,
+      "outsideClickCloses": true,
+      "focusReturnedToTrigger": true
+    },
+    "mobile375": {
+      "viewport": "375×800",
+      "panel": "375×800",
+      "initialImage": "328×191",
+      "imageInsideStage": true,
+      "zoomedImage": "429×250",
+      "zoom": "125 %",
+      "controls": "44×44",
+      "focusTrapTarget": "imageZoomOut",
+      "escapeCloses": true
+    }
+  },
+  "masterclasses": [
+    { "id": 26, "track": "Essentiel", "lessons": 5, "graphicExercises": 1, "sources": 3 },
+    { "id": 27, "track": "Essentiel", "lessons": 5, "graphicExercises": 1, "sources": 3 },
+    { "id": 28, "track": "Avancé", "lessons": 5, "graphicExercises": 1, "sources": 3 },
+    { "id": 29, "track": "Avancé", "lessons": 5, "graphicExercises": 1, "sources": 3, "guideOrderflow": true },
+    { "id": 30, "track": "Avancé", "lessons": 5, "graphicExercises": 1, "sources": 7 }
+  ]
+}

@@ -1,0 +1,56 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1100 620" preserveAspectRatio="xMidYMid meet" role="img" aria-labelledby="title desc">
+  <title id="title">Modèles d’exécution agressive, passive et protocole de conflit</title>
+  <desc id="desc">Trois panneaux expliquent liquidité passive, exécution agressive et gestion d’un conflit entre prix et flux.</desc>
+  <rect width="1100" height="620" rx="18" fill="#182126"/>
+  <g font-family="IBM Plex Sans, Arial, sans-serif">
+    <text x="42" y="52" fill="#eef1ee" font-size="22" font-weight="700">MODÈLES D’EXÉCUTION AVANCÉS</text>
+    <text x="1058" y="52" text-anchor="end" fill="#aab4b7" font-size="14">Ordre affiché ≠ ordre garanti</text>
+
+    <rect x="40" y="86" width="316" height="472" rx="8" fill="#202d32" stroke="#526166"/>
+    <text x="66" y="124" fill="#6be0b5" font-size="16" font-weight="700">1 · PASSIF</text>
+    <text x="66" y="150" fill="#b9c3c4" font-size="12">Ordres limites au repos</text>
+    <g font-size="13">
+      <rect x="70" y="190" width="116" height="52" rx="4" fill="#0b6b50"/>
+      <text x="128" y="221" text-anchor="middle" fill="#eef1ee" font-weight="700">BID · 180</text>
+      <rect x="210" y="190" width="116" height="52" rx="4" fill="#8e343b"/>
+      <text x="268" y="221" text-anchor="middle" fill="#eef1ee" font-weight="700">ASK · 140</text>
+      <text x="198" y="274" text-anchor="middle" fill="#eef1ee" font-size="18" font-weight="700">100,00 / 100,25</text>
+      <line x1="128" y1="248" x2="128" y2="304" stroke="#33c795" stroke-width="2"/>
+      <line x1="268" y1="248" x2="268" y2="304" stroke="#e16468" stroke-width="2"/>
+      <rect x="70" y="318" width="256" height="154" rx="5" fill="#182126"/>
+      <text x="88" y="346" fill="#eef1ee" font-weight="700">À RETENIR</text>
+      <text x="88" y="372" fill="#b9c3c4"><tspan x="88" dy="0">• fournit de la liquidité</tspan><tspan x="88" dy="22">• attend dans une file</tspan><tspan x="88" dy="22">• peut être modifié ou annulé</tspan><tspan x="88" dy="22">• le fill dépend des règles</tspan></text>
+    </g>
+
+    <rect x="392" y="86" width="316" height="472" rx="8" fill="#202d32" stroke="#526166"/>
+    <text x="418" y="124" fill="#f0c766" font-size="16" font-weight="700">2 · AGRESSIF</text>
+    <text x="418" y="150" fill="#b9c3c4" font-size="12">Prend la liquidité disponible</text>
+    <g font-size="13">
+      <path d="M438 206H598" stroke="#eef1ee" stroke-width="4"/>
+      <path d="M580 190L604 206L580 222Z" fill="#eef1ee"/>
+      <rect x="604" y="180" width="74" height="52" rx="4" fill="#8e343b"/>
+      <text x="641" y="211" text-anchor="middle" fill="#eef1ee" font-weight="700">ASK</text>
+      <text x="550" y="270" text-anchor="middle" fill="#eef1ee" font-size="18" font-weight="700">ACHAT NÉGOCIABLE</text>
+      <rect x="422" y="318" width="256" height="154" rx="5" fill="#182126"/>
+      <text x="440" y="346" fill="#eef1ee" font-weight="700">À RETENIR</text>
+      <text x="440" y="372" fill="#b9c3c4"><tspan x="440" dy="0">• traverse le spread</tspan><tspan x="440" dy="22">• consomme les offres</tspan><tspan x="440" dy="22">• prix moyen selon profondeur</tspan><tspan x="440" dy="22">• taille ≠ direction future</tspan></text>
+    </g>
+
+    <rect x="744" y="86" width="316" height="472" rx="8" fill="#d7e0de"/>
+    <text x="770" y="124" fill="#182126" font-size="16" font-weight="700">3 · CONFLIT PRIX / FLUX</text>
+    <text x="770" y="150" fill="#526166" font-size="12">Le protocole décide, pas l’émotion</text>
+    <g font-size="13">
+      <rect x="770" y="184" width="264" height="60" rx="5" fill="#f8faf8" stroke="#aab4b7"/>
+      <text x="790" y="211" fill="#182126" font-weight="700">STRUCTURE H1</text>
+      <text x="1008" y="211" text-anchor="end" fill="#0b6b50" font-weight="700">HAUSSIÈRE</text>
+      <rect x="770" y="258" width="264" height="60" rx="5" fill="#f8faf8" stroke="#aab4b7"/>
+      <text x="790" y="285" fill="#182126" font-weight="700">FLUX COURT</text>
+      <text x="1008" y="285" text-anchor="end" fill="#a8373e" font-weight="700">ABSORPTION ?</text>
+      <line x1="902" y1="318" x2="902" y2="348" stroke="#526166" stroke-width="2"/>
+      <rect x="770" y="350" width="264" height="152" rx="5" fill="#182126"/>
+      <text x="790" y="379" fill="#f0c766" font-weight="700">PROTOCOLE</text>
+      <text x="790" y="406" fill="#b9c3c4"><tspan x="790" dy="0">1. vérifier source et synchro</tspan><tspan x="790" dy="22">2. attendre la condition écrite</tspan><tspan x="790" dy="22">3. invalider ou ne pas trader</tspan><tspan x="790" dy="22">4. jamais arbitrer après coup</tspan></text>
+    </g>
+    <text x="40" y="596" fill="#aab4b7" font-size="12">Schéma pédagogique · les règles d’allocation et d’exécution dépendent du marché.</text>
+  </g>
+</svg>

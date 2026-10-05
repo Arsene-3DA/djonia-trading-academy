@@ -1,0 +1,2519 @@
+{
+  "generatedAt": "2026-09-17T08:54:36.829Z",
+  "engine": "Chrome (cloud browser)",
+  "widths": [
+    320,
+    375,
+    414,
+    768,
+    1024,
+    1440,
+    1920
+  ],
+  "views": [
+    "home",
+    "catalog",
+    "lesson",
+    "calculator",
+    "journal",
+    "exam"
+  ],
+  "totals": {
+    "scenarios": 42,
+    "overflowFailures": 0,
+    "mobileUndersizedTargets": 0,
+    "menuFailures": 0,
+    "imagesWithoutIntrinsicSize": 0,
+    "imagesWithoutZoom": 0
+  },
+  "results": [
+    {
+      "width": 320,
+      "height": 800,
+      "view": "home",
+      "viewport": {
+        "width": 320,
+        "height": 800
+      },
+      "geometry": {
+        "clientWidth": 305,
+        "scrollWidth": 305,
+        "overflowPixels": 0,
+        "horizontalOverflow": false
+      },
+      "touchTargets": {
+        "checked": 21,
+        "minimumRequired": "44×44",
+        "undersized": []
+      },
+      "images": [
+        {
+          "src": "assets/hero-market-briefing.svg",
+          "rendered": "279×235",
+          "intrinsicAttributes": "1200×700",
+          "zoomAvailable": true
+        },
+        {
+          "src": "assets/analysis-workbench.svg",
+          "rendered": "279×250",
+          "intrinsicAttributes": "1200×700",
+          "zoomAvailable": true
+        },
+        {
+          "src": "assets/risk-journal-sheet.svg",
+          "rendered": "279×250",
+          "intrinsicAttributes": "1200×700",
+          "zoomAvailable": true
+        }
+      ],
+      "menu": {
+        "applicable": true,
+        "opens": true,
+        "className": "sidebar open",
+        "sidebarRect": {
+          "left": 0,
+          "right": 276,
+          "width": 276
+        },
+        "transform": "matrix(1, 0, 0, 1, 0, 0)",
+        "closeTarget": {
+          "width": 44,
+          "height": 44
+        },
+        "closeFocused": true,
+        "backdropVisible": true,
+        "closes": true
+      },
+      "lessonIndex": null,
+      "grids": {
+        "exams": "243px",
+        "examModes": null,
+        "calculator": "231px",
+        "journal": null
+      },
+      "surfaces": {
+        "body": "rgb(17, 25, 29)",
+        "exams": "rgb(215, 224, 222)",
+        "lesson": null,
+        "catalogueOrExam": null,
+        "tools": "rgb(24, 33, 38)"
+      }
+    },
+    {
+      "width": 320,
+      "height": 800,
+      "view": "catalog",
+      "viewport": {
+        "width": 320,
+        "height": 800
+      },
+      "geometry": {
+        "clientWidth": 305,
+        "scrollWidth": 305,
+        "overflowPixels": 0,
+        "horizontalOverflow": false
+      },
+      "touchTargets": {
+        "checked": 28,
+        "minimumRequired": "44×44",
+        "undersized": []
+      },
+      "images": [],
+      "menu": {
+        "applicable": true,
+        "opens": true,
+        "className": "sidebar open",
+        "sidebarRect": {
+          "left": 0,
+          "right": 276,
+          "width": 276
+        },
+        "transform": "matrix(1, 0, 0, 1, 0, 0)",
+        "closeTarget": {
+          "width": 44,
+          "height": 44
+        },
+        "closeFocused": true,
+        "backdropVisible": true,
+        "closes": true
+      },
+      "lessonIndex": null,
+      "grids": {
+        "exams": null,
+        "examModes": null,
+        "calculator": null,
+        "journal": null
+      },
+      "surfaces": {
+        "body": "rgb(17, 25, 29)",
+        "exams": null,
+        "lesson": null,
+        "catalogueOrExam": "rgb(215, 224, 222)",
+        "tools": null
+      }
+    },
+    {
+      "width": 320,
+      "height": 800,
+      "view": "lesson",
+      "viewport": {
+        "width": 320,
+        "height": 800
+      },
+      "geometry": {
+        "clientWidth": 305,
+        "scrollWidth": 305,
+        "overflowPixels": 0,
+        "horizontalOverflow": false
+      },
+      "touchTargets": {
+        "checked": 36,
+        "minimumRequired": "44×44",
+        "undersized": []
+      },
+      "images": [
+        {
+          "src": "assets/metatrader5-market-watch.png",
+          "rendered": "279×219",
+          "intrinsicAttributes": "1363×936",
+          "zoomAvailable": true
+        },
+        {
+          "src": "assets/metatrader4-interface.png",
+          "rendered": "217×149",
+          "intrinsicAttributes": "1363×936",
+          "zoomAvailable": true
+        },
+        {
+          "src": "assets/metatrader5-market-watch.png",
+          "rendered": "217×149",
+          "intrinsicAttributes": "1363×936",
+          "zoomAvailable": true
+        },
+        {
+          "src": "assets/metatrader5-market-watch.png",
+          "rendered": "202×139",
+          "intrinsicAttributes": "1363×936",
+          "zoomAvailable": true
+        }
+      ],
+      "menu": {
+        "applicable": true,
+        "opens": true,
+        "className": "sidebar open",
+        "sidebarRect": {
+          "left": 0,
+          "right": 276,
+          "width": 276
+        },
+        "transform": "matrix(1, 0, 0, 1, 0, 0)",
+        "closeTarget": {
+          "width": 44,
+          "height": 44
+        },
+        "closeFocused": true,
+        "backdropVisible": true,
+        "closes": true
+      },
+      "lessonIndex": {
+        "position": "static",
+        "width": 281
+      },
+      "grids": {
+        "exams": null,
+        "examModes": null,
+        "calculator": null,
+        "journal": null
+      },
+      "surfaces": {
+        "body": "rgb(17, 25, 29)",
+        "exams": null,
+        "lesson": "rgb(215, 224, 222)",
+        "catalogueOrExam": null,
+        "tools": null
+      }
+    },
+    {
+      "width": 320,
+      "height": 800,
+      "view": "calculator",
+      "viewport": {
+        "width": 320,
+        "height": 800
+      },
+      "geometry": {
+        "clientWidth": 305,
+        "scrollWidth": 305,
+        "overflowPixels": 0,
+        "horizontalOverflow": false
+      },
+      "touchTargets": {
+        "checked": 21,
+        "minimumRequired": "44×44",
+        "undersized": []
+      },
+      "images": [
+        {
+          "src": "assets/hero-market-briefing.svg",
+          "rendered": "279×235",
+          "intrinsicAttributes": "1200×700",
+          "zoomAvailable": true
+        },
+        {
+          "src": "assets/analysis-workbench.svg",
+          "rendered": "279×250",
+          "intrinsicAttributes": "1200×700",
+          "zoomAvailable": true
+        },
+        {
+          "src": "assets/risk-journal-sheet.svg",
+          "rendered": "279×250",
+          "intrinsicAttributes": "1200×700",
+          "zoomAvailable": true
+        }
+      ],
+      "menu": {
+        "applicable": true,
+        "opens": true,
+        "className": "sidebar open",
+        "sidebarRect": {
+          "left": 0,
+          "right": 276,
+          "width": 276
+        },
+        "transform": "matrix(1, 0, 0, 1, 0, 0)",
+        "closeTarget": {
+          "width": 44,
+          "height": 44
+        },
+        "closeFocused": true,
+        "backdropVisible": true,
+        "closes": true
+      },
+      "lessonIndex": null,
+      "grids": {
+        "exams": "243px",
+        "examModes": null,
+        "calculator": "231px",
+        "journal": null
+      },
+      "surfaces": {
+        "body": "rgb(17, 25, 29)",
+        "exams": "rgb(215, 224, 222)",
+        "lesson": null,
+        "catalogueOrExam": null,
+        "tools": "rgb(24, 33, 38)"
+      }
+    },
+    {
+      "width": 320,
+      "height": 800,
+      "view": "journal",
+      "viewport": {
+        "width": 320,
+        "height": 800
+      },
+      "geometry": {
+        "clientWidth": 305,
+        "scrollWidth": 305,
+        "overflowPixels": 0,
+        "horizontalOverflow": false
+      },
+      "touchTargets": {
+        "checked": 40,
+        "minimumRequired": "44×44",
+        "undersized": []
+      },
+      "images": [
+        {
+          "src": "assets/risk-journal-sheet.svg",
+          "rendered": "279×219",
+          "intrinsicAttributes": "1200×700",
+          "zoomAvailable": true
+        }
+      ],
+      "menu": {
+        "applicable": true,
+        "opens": true,
+        "className": "sidebar open",
+        "sidebarRect": {
+          "left": 0,
+          "right": 276,
+          "width": 276
+        },
+        "transform": "matrix(1, 0, 0, 1, 0, 0)",
+        "closeTarget": {
+          "width": 44,
+          "height": 44
+        },
+        "closeFocused": true,
+        "backdropVisible": true,
+        "closes": true
+      },
+      "lessonIndex": {
+        "position": "static",
+        "width": 281
+      },
+      "grids": {
+        "exams": null,
+        "examModes": null,
+        "calculator": null,
+        "journal": "243px"
+      },
+      "surfaces": {
+        "body": "rgb(17, 25, 29)",
+        "exams": null,
+        "lesson": "rgb(215, 224, 222)",
+        "catalogueOrExam": null,
+        "tools": null
+      }
+    },
+    {
+      "width": 320,
+      "height": 800,
+      "view": "exam",
+      "viewport": {
+        "width": 320,
+        "height": 800
+      },
+      "geometry": {
+        "clientWidth": 305,
+        "scrollWidth": 305,
+        "overflowPixels": 0,
+        "horizontalOverflow": false
+      },
+      "touchTargets": {
+        "checked": 6,
+        "minimumRequired": "44×44",
+        "undersized": []
+      },
+      "images": [],
+      "menu": {
+        "applicable": true,
+        "opens": true,
+        "className": "sidebar open",
+        "sidebarRect": {
+          "left": 0,
+          "right": 276,
+          "width": 276
+        },
+        "transform": "matrix(1, 0, 0, 1, 0, 0)",
+        "closeTarget": {
+          "width": 44,
+          "height": 44
+        },
+        "closeFocused": true,
+        "backdropVisible": true,
+        "closes": true
+      },
+      "lessonIndex": null,
+      "grids": {
+        "exams": null,
+        "examModes": "243px",
+        "calculator": null,
+        "journal": null
+      },
+      "surfaces": {
+        "body": "rgb(17, 25, 29)",
+        "exams": null,
+        "lesson": null,
+        "catalogueOrExam": "rgb(215, 224, 222)",
+        "tools": null
+      }
+    },
+    {
+      "width": 375,
+      "height": 800,
+      "view": "home",
+      "viewport": {
+        "width": 375,
+        "height": 800
+      },
+      "geometry": {
+        "clientWidth": 360,
+        "scrollWidth": 360,
+        "overflowPixels": 0,
+        "horizontalOverflow": false
+      },
+      "touchTargets": {
+        "checked": 21,
+        "minimumRequired": "44×44",
+        "undersized": []
+      },
+      "images": [
+        {
+          "src": "assets/hero-market-briefing.svg",
+          "rendered": "334×235",
+          "intrinsicAttributes": "1200×700",
+          "zoomAvailable": true
+        },
+        {
+          "src": "assets/analysis-workbench.svg",
+          "rendered": "334×250",
+          "intrinsicAttributes": "1200×700",
+          "zoomAvailable": true
+        },
+        {
+          "src": "assets/risk-journal-sheet.svg",
+          "rendered": "334×250",
+          "intrinsicAttributes": "1200×700",
+          "zoomAvailable": true
+        }
+      ],
+      "menu": {
+        "applicable": true,
+        "opens": true,
+        "className": "sidebar open",
+        "sidebarRect": {
+          "left": 0,
+          "right": 276,
+          "width": 276
+        },
+        "transform": "matrix(1, 0, 0, 1, 0, 0)",
+        "closeTarget": {
+          "width": 44,
+          "height": 44
+        },
+        "closeFocused": true,
+        "backdropVisible": true,
+        "closes": true
+      },
+      "lessonIndex": null,
+      "grids": {
+        "exams": "298px",
+        "examModes": null,
+        "calculator": "286px",
+        "journal": null
+      },
+      "surfaces": {
+        "body": "rgb(17, 25, 29)",
+        "exams": "rgb(215, 224, 222)",
+        "lesson": null,
+        "catalogueOrExam": null,
+        "tools": "rgb(24, 33, 38)"
+      }
+    },
+    {
+      "width": 375,
+      "height": 800,
+      "view": "catalog",
+      "viewport": {
+        "width": 375,
+        "height": 800
+      },
+      "geometry": {
+        "clientWidth": 360,
+        "scrollWidth": 360,
+        "overflowPixels": 0,
+        "horizontalOverflow": false
+      },
+      "touchTargets": {
+        "checked": 28,
+        "minimumRequired": "44×44",
+        "undersized": []
+      },
+      "images": [],
+      "menu": {
+        "applicable": true,
+        "opens": true,
+        "className": "sidebar open",
+        "sidebarRect": {
+          "left": 0,
+          "right": 276,
+          "width": 276
+        },
+        "transform": "matrix(1, 0, 0, 1, 0, 0)",
+        "closeTarget": {
+          "width": 44,
+          "height": 44
+        },
+        "closeFocused": true,
+        "backdropVisible": true,
+        "closes": true
+      },
+      "lessonIndex": null,
+      "grids": {
+        "exams": null,
+        "examModes": null,
+        "calculator": null,
+        "journal": null
+      },
+      "surfaces": {
+        "body": "rgb(17, 25, 29)",
+        "exams": null,
+        "lesson": null,
+        "catalogueOrExam": "rgb(215, 224, 222)",
+        "tools": null
+      }
+    },
+    {
+      "width": 375,
+      "height": 800,
+      "view": "lesson",
+      "viewport": {
+        "width": 375,
+        "height": 800
+      },
+      "geometry": {
+        "clientWidth": 360,
+        "scrollWidth": 360,
+        "overflowPixels": 0,
+        "horizontalOverflow": false
+      },
+      "touchTargets": {
+        "checked": 36,
+        "minimumRequired": "44×44",
+        "undersized": []
+      },
+      "images": [
+        {
+          "src": "assets/metatrader5-market-watch.png",
+          "rendered": "334×219",
+          "intrinsicAttributes": "1363×936",
+          "zoomAvailable": true
+        },
+        {
+          "src": "assets/metatrader4-interface.png",
+          "rendered": "272×187",
+          "intrinsicAttributes": "1363×936",
+          "zoomAvailable": true
+        },
+        {
+          "src": "assets/metatrader5-market-watch.png",
+          "rendered": "272×187",
+          "intrinsicAttributes": "1363×936",
+          "zoomAvailable": true
+        },
+        {
+          "src": "assets/metatrader5-market-watch.png",
+          "rendered": "257×177",
+          "intrinsicAttributes": "1363×936",
+          "zoomAvailable": true
+        }
+      ],
+      "menu": {
+        "applicable": true,
+        "opens": true,
+        "className": "sidebar open",
+        "sidebarRect": {
+          "left": 0,
+          "right": 276,
+          "width": 276
+        },
+        "transform": "matrix(1, 0, 0, 1, 0, 0)",
+        "closeTarget": {
+          "width": 44,
+          "height": 44
+        },
+        "closeFocused": true,
+        "backdropVisible": true,
+        "closes": true
+      },
+      "lessonIndex": {
+        "position": "static",
+        "width": 336
+      },
+      "grids": {
+        "exams": null,
+        "examModes": null,
+        "calculator": null,
+        "journal": null
+      },
+      "surfaces": {
+        "body": "rgb(17, 25, 29)",
+        "exams": null,
+        "lesson": "rgb(215, 224, 222)",
+        "catalogueOrExam": null,
+        "tools": null
+      }
+    },
+    {
+      "width": 375,
+      "height": 800,
+      "view": "calculator",
+      "viewport": {
+        "width": 375,
+        "height": 800
+      },
+      "geometry": {
+        "clientWidth": 360,
+        "scrollWidth": 360,
+        "overflowPixels": 0,
+        "horizontalOverflow": false
+      },
+      "touchTargets": {
+        "checked": 21,
+        "minimumRequired": "44×44",
+        "undersized": []
+      },
+      "images": [
+        {
+          "src": "assets/hero-market-briefing.svg",
+          "rendered": "334×235",
+          "intrinsicAttributes": "1200×700",
+          "zoomAvailable": true
+        },
+        {
+          "src": "assets/analysis-workbench.svg",
+          "rendered": "334×250",
+          "intrinsicAttributes": "1200×700",
+          "zoomAvailable": true
+        },
+        {
+          "src": "assets/risk-journal-sheet.svg",
+          "rendered": "334×250",
+          "intrinsicAttributes": "1200×700",
+          "zoomAvailable": true
+        }
+      ],
+      "menu": {
+        "applicable": true,
+        "opens": true,
+        "className": "sidebar open",
+        "sidebarRect": {
+          "left": 0,
+          "right": 276,
+          "width": 276
+        },
+        "transform": "matrix(1, 0, 0, 1, 0, 0)",
+        "closeTarget": {
+          "width": 44,
+          "height": 44
+        },
+        "closeFocused": true,
+        "backdropVisible": true,
+        "closes": true
+      },
+      "lessonIndex": null,
+      "grids": {
+        "exams": "298px",
+        "examModes": null,
+        "calculator": "286px",
+        "journal": null
+      },
+      "surfaces": {
+        "body": "rgb(17, 25, 29)",
+        "exams": "rgb(215, 224, 222)",
+        "lesson": null,
+        "catalogueOrExam": null,
+        "tools": "rgb(24, 33, 38)"
+      }
+    },
+    {
+      "width": 375,
+      "height": 800,
+      "view": "journal",
+      "viewport": {
+        "width": 375,
+        "height": 800
+      },
+      "geometry": {
+        "clientWidth": 360,
+        "scrollWidth": 360,
+        "overflowPixels": 0,
+        "horizontalOverflow": false
+      },
+      "touchTargets": {
+        "checked": 40,
+        "minimumRequired": "44×44",
+        "undersized": []
+      },
+      "images": [
+        {
+          "src": "assets/risk-journal-sheet.svg",
+          "rendered": "334×219",
+          "intrinsicAttributes": "1200×700",
+          "zoomAvailable": true
+        }
+      ],
+      "menu": {
+        "applicable": true,
+        "opens": true,
+        "className": "sidebar open",
+        "sidebarRect": {
+          "left": 0,
+          "right": 276,
+          "width": 276
+        },
+        "transform": "matrix(1, 0, 0, 1, 0, 0)",
+        "closeTarget": {
+          "width": 44,
+          "height": 44
+        },
+        "closeFocused": true,
+        "backdropVisible": true,
+        "closes": true
+      },
+      "lessonIndex": {
+        "position": "static",
+        "width": 336
+      },
+      "grids": {
+        "exams": null,
+        "examModes": null,
+        "calculator": null,
+        "journal": "298px"
+      },
+      "surfaces": {
+        "body": "rgb(17, 25, 29)",
+        "exams": null,
+        "lesson": "rgb(215, 224, 222)",
+        "catalogueOrExam": null,
+        "tools": null
+      }
+    },
+    {
+      "width": 375,
+      "height": 800,
+      "view": "exam",
+      "viewport": {
+        "width": 375,
+        "height": 800
+      },
+      "geometry": {
+        "clientWidth": 360,
+        "scrollWidth": 360,
+        "overflowPixels": 0,
+        "horizontalOverflow": false
+      },
+      "touchTargets": {
+        "checked": 6,
+        "minimumRequired": "44×44",
+        "undersized": []
+      },
+      "images": [],
+      "menu": {
+        "applicable": true,
+        "opens": true,
+        "className": "sidebar open",
+        "sidebarRect": {
+          "left": 0,
+          "right": 276,
+          "width": 276
+        },
+        "transform": "matrix(1, 0, 0, 1, 0, 0)",
+        "closeTarget": {
+          "width": 44,
+          "height": 44
+        },
+        "closeFocused": true,
+        "backdropVisible": true,
+        "closes": true
+      },
+      "lessonIndex": null,
+      "grids": {
+        "exams": null,
+        "examModes": "298px",
+        "calculator": null,
+        "journal": null
+      },
+      "surfaces": {
+        "body": "rgb(17, 25, 29)",
+        "exams": null,
+        "lesson": null,
+        "catalogueOrExam": "rgb(215, 224, 222)",
+        "tools": null
+      }
+    },
+    {
+      "width": 414,
+      "height": 800,
+      "view": "home",
+      "viewport": {
+        "width": 414,
+        "height": 800
+      },
+      "geometry": {
+        "clientWidth": 399,
+        "scrollWidth": 399,
+        "overflowPixels": 0,
+        "horizontalOverflow": false
+      },
+      "touchTargets": {
+        "checked": 21,
+        "minimumRequired": "44×44",
+        "undersized": []
+      },
+      "images": [
+        {
+          "src": "assets/hero-market-briefing.svg",
+          "rendered": "361×235",
+          "intrinsicAttributes": "1200×700",
+          "zoomAvailable": true
+        },
+        {
+          "src": "assets/analysis-workbench.svg",
+          "rendered": "361×250",
+          "intrinsicAttributes": "1200×700",
+          "zoomAvailable": true
+        },
+        {
+          "src": "assets/risk-journal-sheet.svg",
+          "rendered": "361×250",
+          "intrinsicAttributes": "1200×700",
+          "zoomAvailable": true
+        }
+      ],
+      "menu": {
+        "applicable": true,
+        "opens": true,
+        "className": "sidebar open",
+        "sidebarRect": {
+          "left": 0,
+          "right": 276,
+          "width": 276
+        },
+        "transform": "matrix(1, 0, 0, 1, 0, 0)",
+        "closeTarget": {
+          "width": 44,
+          "height": 44
+        },
+        "closeFocused": true,
+        "backdropVisible": true,
+        "closes": true
+      },
+      "lessonIndex": null,
+      "grids": {
+        "exams": "317px",
+        "examModes": null,
+        "calculator": "313px",
+        "journal": null
+      },
+      "surfaces": {
+        "body": "rgb(17, 25, 29)",
+        "exams": "rgb(215, 224, 222)",
+        "lesson": null,
+        "catalogueOrExam": null,
+        "tools": "rgb(24, 33, 38)"
+      }
+    },
+    {
+      "width": 414,
+      "height": 800,
+      "view": "catalog",
+      "viewport": {
+        "width": 414,
+        "height": 800
+      },
+      "geometry": {
+        "clientWidth": 399,
+        "scrollWidth": 399,
+        "overflowPixels": 0,
+        "horizontalOverflow": false
+      },
+      "touchTargets": {
+        "checked": 28,
+        "minimumRequired": "44×44",
+        "undersized": []
+      },
+      "images": [],
+      "menu": {
+        "applicable": true,
+        "opens": true,
+        "className": "sidebar open",
+        "sidebarRect": {
+          "left": 0,
+          "right": 276,
+          "width": 276
+        },
+        "transform": "matrix(1, 0, 0, 1, 0, 0)",
+        "closeTarget": {
+          "width": 44,
+          "height": 44
+        },
+        "closeFocused": true,
+        "backdropVisible": true,
+        "closes": true
+      },
+      "lessonIndex": null,
+      "grids": {
+        "exams": null,
+        "examModes": null,
+        "calculator": null,
+        "journal": null
+      },
+      "surfaces": {
+        "body": "rgb(17, 25, 29)",
+        "exams": null,
+        "lesson": null,
+        "catalogueOrExam": "rgb(215, 224, 222)",
+        "tools": null
+      }
+    },
+    {
+      "width": 414,
+      "height": 800,
+      "view": "lesson",
+      "viewport": {
+        "width": 414,
+        "height": 800
+      },
+      "geometry": {
+        "clientWidth": 399,
+        "scrollWidth": 399,
+        "overflowPixels": 0,
+        "horizontalOverflow": false
+      },
+      "touchTargets": {
+        "checked": 36,
+        "minimumRequired": "44×44",
+        "undersized": []
+      },
+      "images": [
+        {
+          "src": "assets/metatrader5-market-watch.png",
+          "rendered": "361×219",
+          "intrinsicAttributes": "1363×936",
+          "zoomAvailable": true
+        },
+        {
+          "src": "assets/metatrader4-interface.png",
+          "rendered": "291×200",
+          "intrinsicAttributes": "1363×936",
+          "zoomAvailable": true
+        },
+        {
+          "src": "assets/metatrader5-market-watch.png",
+          "rendered": "291×200",
+          "intrinsicAttributes": "1363×936",
+          "zoomAvailable": true
+        },
+        {
+          "src": "assets/metatrader5-market-watch.png",
+          "rendered": "276×190",
+          "intrinsicAttributes": "1363×936",
+          "zoomAvailable": true
+        }
+      ],
+      "menu": {
+        "applicable": true,
+        "opens": true,
+        "className": "sidebar open",
+        "sidebarRect": {
+          "left": 0,
+          "right": 276,
+          "width": 276
+        },
+        "transform": "matrix(1, 0, 0, 1, 0, 0)",
+        "closeTarget": {
+          "width": 44,
+          "height": 44
+        },
+        "closeFocused": true,
+        "backdropVisible": true,
+        "closes": true
+      },
+      "lessonIndex": {
+        "position": "static",
+        "width": 363
+      },
+      "grids": {
+        "exams": null,
+        "examModes": null,
+        "calculator": null,
+        "journal": null
+      },
+      "surfaces": {
+        "body": "rgb(17, 25, 29)",
+        "exams": null,
+        "lesson": "rgb(215, 224, 222)",
+        "catalogueOrExam": null,
+        "tools": null
+      }
+    },
+    {
+      "width": 414,
+      "height": 800,
+      "view": "calculator",
+      "viewport": {
+        "width": 414,
+        "height": 800
+      },
+      "geometry": {
+        "clientWidth": 399,
+        "scrollWidth": 399,
+        "overflowPixels": 0,
+        "horizontalOverflow": false
+      },
+      "touchTargets": {
+        "checked": 21,
+        "minimumRequired": "44×44",
+        "undersized": []
+      },
+      "images": [
+        {
+          "src": "assets/hero-market-briefing.svg",
+          "rendered": "361×235",
+          "intrinsicAttributes": "1200×700",
+          "zoomAvailable": true
+        },
+        {
+          "src": "assets/analysis-workbench.svg",
+          "rendered": "361×250",
+          "intrinsicAttributes": "1200×700",
+          "zoomAvailable": true
+        },
+        {
+          "src": "assets/risk-journal-sheet.svg",
+          "rendered": "361×250",
+          "intrinsicAttributes": "1200×700",
+          "zoomAvailable": true
+        }
+      ],
+      "menu": {
+        "applicable": true,
+        "opens": true,
+        "className": "sidebar open",
+        "sidebarRect": {
+          "left": 0,
+          "right": 276,
+          "width": 276
+        },
+        "transform": "matrix(1, 0, 0, 1, 0, 0)",
+        "closeTarget": {
+          "width": 44,
+          "height": 44
+        },
+        "closeFocused": true,
+        "backdropVisible": true,
+        "closes": true
+      },
+      "lessonIndex": null,
+      "grids": {
+        "exams": "317px",
+        "examModes": null,
+        "calculator": "313px",
+        "journal": null
+      },
+      "surfaces": {
+        "body": "rgb(17, 25, 29)",
+        "exams": "rgb(215, 224, 222)",
+        "lesson": null,
+        "catalogueOrExam": null,
+        "tools": "rgb(24, 33, 38)"
+      }
+    },
+    {
+      "width": 414,
+      "height": 800,
+      "view": "journal",
+      "viewport": {
+        "width": 414,
+        "height": 800
+      },
+      "geometry": {
+        "clientWidth": 399,
+        "scrollWidth": 399,
+        "overflowPixels": 0,
+        "horizontalOverflow": false
+      },
+      "touchTargets": {
+        "checked": 40,
+        "minimumRequired": "44×44",
+        "undersized": []
+      },
+      "images": [
+        {
+          "src": "assets/risk-journal-sheet.svg",
+          "rendered": "361×219",
+          "intrinsicAttributes": "1200×700",
+          "zoomAvailable": true
+        }
+      ],
+      "menu": {
+        "applicable": true,
+        "opens": true,
+        "className": "sidebar open",
+        "sidebarRect": {
+          "left": 0,
+          "right": 276,
+          "width": 276
+        },
+        "transform": "matrix(1, 0, 0, 1, 0, 0)",
+        "closeTarget": {
+          "width": 44,
+          "height": 44
+        },
+        "closeFocused": true,
+        "backdropVisible": true,
+        "closes": true
+      },
+      "lessonIndex": {
+        "position": "static",
+        "width": 363
+      },
+      "grids": {
+        "exams": null,
+        "examModes": null,
+        "calculator": null,
+        "journal": "317px"
+      },
+      "surfaces": {
+        "body": "rgb(17, 25, 29)",
+        "exams": null,
+        "lesson": "rgb(215, 224, 222)",
+        "catalogueOrExam": null,
+        "tools": null
+      }
+    },
+    {
+      "width": 414,
+      "height": 800,
+      "view": "exam",
+      "viewport": {
+        "width": 414,
+        "height": 800
+      },
+      "geometry": {
+        "clientWidth": 399,
+        "scrollWidth": 399,
+        "overflowPixels": 0,
+        "horizontalOverflow": false
+      },
+      "touchTargets": {
+        "checked": 6,
+        "minimumRequired": "44×44",
+        "undersized": []
+      },
+      "images": [],
+      "menu": {
+        "applicable": true,
+        "opens": true,
+        "className": "sidebar open",
+        "sidebarRect": {
+          "left": 0,
+          "right": 276,
+          "width": 276
+        },
+        "transform": "matrix(1, 0, 0, 1, 0, 0)",
+        "closeTarget": {
+          "width": 44,
+          "height": 44
+        },
+        "closeFocused": true,
+        "backdropVisible": true,
+        "closes": true
+      },
+      "lessonIndex": null,
+      "grids": {
+        "exams": null,
+        "examModes": "317px",
+        "calculator": null,
+        "journal": null
+      },
+      "surfaces": {
+        "body": "rgb(17, 25, 29)",
+        "exams": null,
+        "lesson": null,
+        "catalogueOrExam": "rgb(215, 224, 222)",
+        "tools": null
+      }
+    },
+    {
+      "width": 768,
+      "height": 800,
+      "view": "home",
+      "viewport": {
+        "width": 768,
+        "height": 800
+      },
+      "geometry": {
+        "clientWidth": 753,
+        "scrollWidth": 753,
+        "overflowPixels": 0,
+        "horizontalOverflow": false
+      },
+      "touchTargets": {
+        "checked": 24,
+        "minimumRequired": "non bloquant hors mobile",
+        "undersized": []
+      },
+      "images": [
+        {
+          "src": "assets/hero-market-briefing.svg",
+          "rendered": "715×418",
+          "intrinsicAttributes": "1200×700",
+          "zoomAvailable": true
+        },
+        {
+          "src": "assets/analysis-workbench.svg",
+          "rendered": "715×360",
+          "intrinsicAttributes": "1200×700",
+          "zoomAvailable": true
+        },
+        {
+          "src": "assets/risk-journal-sheet.svg",
+          "rendered": "715×360",
+          "intrinsicAttributes": "1200×700",
+          "zoomAvailable": true
+        }
+      ],
+      "menu": {
+        "applicable": true,
+        "opens": true,
+        "className": "sidebar open",
+        "sidebarRect": {
+          "left": 0,
+          "right": 276,
+          "width": 276
+        },
+        "transform": "matrix(1, 0, 0, 1, 0, 0)",
+        "closeTarget": {
+          "width": 44,
+          "height": 44
+        },
+        "closeFocused": true,
+        "backdropVisible": true,
+        "closes": true
+      },
+      "lessonIndex": null,
+      "grids": {
+        "exams": "220.922px 220.922px 220.922px",
+        "examModes": null,
+        "calculator": "327.5px 327.5px",
+        "journal": null
+      },
+      "surfaces": {
+        "body": "rgb(17, 25, 29)",
+        "exams": "rgb(215, 224, 222)",
+        "lesson": null,
+        "catalogueOrExam": null,
+        "tools": "rgb(24, 33, 38)"
+      }
+    },
+    {
+      "width": 768,
+      "height": 800,
+      "view": "catalog",
+      "viewport": {
+        "width": 768,
+        "height": 800
+      },
+      "geometry": {
+        "clientWidth": 753,
+        "scrollWidth": 753,
+        "overflowPixels": 0,
+        "horizontalOverflow": false
+      },
+      "touchTargets": {
+        "checked": 31,
+        "minimumRequired": "non bloquant hors mobile",
+        "undersized": []
+      },
+      "images": [],
+      "menu": {
+        "applicable": true,
+        "opens": true,
+        "className": "sidebar open",
+        "sidebarRect": {
+          "left": 0,
+          "right": 276,
+          "width": 276
+        },
+        "transform": "matrix(1, 0, 0, 1, 0, 0)",
+        "closeTarget": {
+          "width": 44,
+          "height": 44
+        },
+        "closeFocused": true,
+        "backdropVisible": true,
+        "closes": true
+      },
+      "lessonIndex": null,
+      "grids": {
+        "exams": null,
+        "examModes": null,
+        "calculator": null,
+        "journal": null
+      },
+      "surfaces": {
+        "body": "rgb(17, 25, 29)",
+        "exams": null,
+        "lesson": null,
+        "catalogueOrExam": "rgb(215, 224, 222)",
+        "tools": null
+      }
+    },
+    {
+      "width": 768,
+      "height": 800,
+      "view": "lesson",
+      "viewport": {
+        "width": 768,
+        "height": 800
+      },
+      "geometry": {
+        "clientWidth": 753,
+        "scrollWidth": 753,
+        "overflowPixels": 0,
+        "horizontalOverflow": false
+      },
+      "touchTargets": {
+        "checked": 39,
+        "minimumRequired": "non bloquant hors mobile",
+        "undersized": []
+      },
+      "images": [
+        {
+          "src": "assets/metatrader5-market-watch.png",
+          "rendered": "715×269",
+          "intrinsicAttributes": "1363×936",
+          "zoomAvailable": true
+        },
+        {
+          "src": "assets/metatrader4-interface.png",
+          "rendered": "290×199",
+          "intrinsicAttributes": "1363×936",
+          "zoomAvailable": true
+        },
+        {
+          "src": "assets/metatrader5-market-watch.png",
+          "rendered": "290×199",
+          "intrinsicAttributes": "1363×936",
+          "zoomAvailable": true
+        },
+        {
+          "src": "assets/metatrader5-market-watch.png",
+          "rendered": "313×215",
+          "intrinsicAttributes": "1363×936",
+          "zoomAvailable": true
+        }
+      ],
+      "menu": {
+        "applicable": true,
+        "opens": true,
+        "className": "sidebar open",
+        "sidebarRect": {
+          "left": 0,
+          "right": 276,
+          "width": 276
+        },
+        "transform": "matrix(1, 0, 0, 1, 0, 0)",
+        "closeTarget": {
+          "width": 44,
+          "height": 44
+        },
+        "closeFocused": true,
+        "backdropVisible": true,
+        "closes": true
+      },
+      "lessonIndex": {
+        "position": "static",
+        "width": 717
+      },
+      "grids": {
+        "exams": null,
+        "examModes": null,
+        "calculator": null,
+        "journal": null
+      },
+      "surfaces": {
+        "body": "rgb(17, 25, 29)",
+        "exams": null,
+        "lesson": "rgb(215, 224, 222)",
+        "catalogueOrExam": null,
+        "tools": null
+      }
+    },
+    {
+      "width": 768,
+      "height": 800,
+      "view": "calculator",
+      "viewport": {
+        "width": 768,
+        "height": 800
+      },
+      "geometry": {
+        "clientWidth": 753,
+        "scrollWidth": 753,
+        "overflowPixels": 0,
+        "horizontalOverflow": false
+      },
+      "touchTargets": {
+        "checked": 24,
+        "minimumRequired": "non bloquant hors mobile",
+        "undersized": []
+      },
+      "images": [
+        {
+          "src": "assets/hero-market-briefing.svg",
+          "rendered": "715×418",
+          "intrinsicAttributes": "1200×700",
+          "zoomAvailable": true
+        },
+        {
+          "src": "assets/analysis-workbench.svg",
+          "rendered": "715×360",
+          "intrinsicAttributes": "1200×700",
+          "zoomAvailable": true
+        },
+        {
+          "src": "assets/risk-journal-sheet.svg",
+          "rendered": "715×360",
+          "intrinsicAttributes": "1200×700",
+          "zoomAvailable": true
+        }
+      ],
+      "menu": {
+        "applicable": true,
+        "opens": true,
+        "className": "sidebar open",
+        "sidebarRect": {
+          "left": 0,
+          "right": 276,
+          "width": 276
+        },
+        "transform": "matrix(1, 0, 0, 1, 0, 0)",
+        "closeTarget": {
+          "width": 44,
+          "height": 44
+        },
+        "closeFocused": true,
+        "backdropVisible": true,
+        "closes": true
+      },
+      "lessonIndex": null,
+      "grids": {
+        "exams": "220.922px 220.922px 220.922px",
+        "examModes": null,
+        "calculator": "327.5px 327.5px",
+        "journal": null
+      },
+      "surfaces": {
+        "body": "rgb(17, 25, 29)",
+        "exams": "rgb(215, 224, 222)",
+        "lesson": null,
+        "catalogueOrExam": null,
+        "tools": "rgb(24, 33, 38)"
+      }
+    },
+    {
+      "width": 768,
+      "height": 800,
+      "view": "journal",
+      "viewport": {
+        "width": 768,
+        "height": 800
+      },
+      "geometry": {
+        "clientWidth": 753,
+        "scrollWidth": 753,
+        "overflowPixels": 0,
+        "horizontalOverflow": false
+      },
+      "touchTargets": {
+        "checked": 43,
+        "minimumRequired": "non bloquant hors mobile",
+        "undersized": []
+      },
+      "images": [
+        {
+          "src": "assets/risk-journal-sheet.svg",
+          "rendered": "715×269",
+          "intrinsicAttributes": "1200×700",
+          "zoomAvailable": true
+        }
+      ],
+      "menu": {
+        "applicable": true,
+        "opens": true,
+        "className": "sidebar open",
+        "sidebarRect": {
+          "left": 0,
+          "right": 276,
+          "width": 276
+        },
+        "transform": "matrix(1, 0, 0, 1, 0, 0)",
+        "closeTarget": {
+          "width": 44,
+          "height": 44
+        },
+        "closeFocused": true,
+        "backdropVisible": true,
+        "closes": true
+      },
+      "lessonIndex": {
+        "position": "static",
+        "width": 717
+      },
+      "grids": {
+        "exams": null,
+        "examModes": null,
+        "calculator": null,
+        "journal": "316.953px 316.953px"
+      },
+      "surfaces": {
+        "body": "rgb(17, 25, 29)",
+        "exams": null,
+        "lesson": "rgb(215, 224, 222)",
+        "catalogueOrExam": null,
+        "tools": null
+      }
+    },
+    {
+      "width": 768,
+      "height": 800,
+      "view": "exam",
+      "viewport": {
+        "width": 768,
+        "height": 800
+      },
+      "geometry": {
+        "clientWidth": 753,
+        "scrollWidth": 753,
+        "overflowPixels": 0,
+        "horizontalOverflow": false
+      },
+      "touchTargets": {
+        "checked": 9,
+        "minimumRequired": "non bloquant hors mobile",
+        "undersized": []
+      },
+      "images": [],
+      "menu": {
+        "applicable": true,
+        "opens": true,
+        "className": "sidebar open",
+        "sidebarRect": {
+          "left": 0,
+          "right": 276,
+          "width": 276
+        },
+        "transform": "matrix(1, 0, 0, 1, 0, 0)",
+        "closeTarget": {
+          "width": 44,
+          "height": 44
+        },
+        "closeFocused": true,
+        "backdropVisible": true,
+        "closes": true
+      },
+      "lessonIndex": null,
+      "grids": {
+        "exams": null,
+        "examModes": "317.781px 317.781px",
+        "calculator": null,
+        "journal": null
+      },
+      "surfaces": {
+        "body": "rgb(17, 25, 29)",
+        "exams": null,
+        "lesson": null,
+        "catalogueOrExam": "rgb(215, 224, 222)",
+        "tools": null
+      }
+    },
+    {
+      "width": 1024,
+      "height": 800,
+      "view": "home",
+      "viewport": {
+        "width": 1024,
+        "height": 800
+      },
+      "geometry": {
+        "clientWidth": 1009,
+        "scrollWidth": 1009,
+        "overflowPixels": 0,
+        "horizontalOverflow": false
+      },
+      "touchTargets": {
+        "checked": 50,
+        "minimumRequired": "non bloquant hors mobile",
+        "undersized": []
+      },
+      "images": [
+        {
+          "src": "assets/hero-market-briefing.svg",
+          "rendered": "683×399",
+          "intrinsicAttributes": "1200×700",
+          "zoomAvailable": true
+        },
+        {
+          "src": "assets/analysis-workbench.svg",
+          "rendered": "683×360",
+          "intrinsicAttributes": "1200×700",
+          "zoomAvailable": true
+        },
+        {
+          "src": "assets/risk-journal-sheet.svg",
+          "rendered": "683×360",
+          "intrinsicAttributes": "1200×700",
+          "zoomAvailable": true
+        }
+      ],
+      "menu": {
+        "applicable": false
+      },
+      "lessonIndex": null,
+      "grids": {
+        "exams": "204.453px 204.453px 204.453px",
+        "examModes": null,
+        "calculator": "311.5px 311.5px",
+        "journal": null
+      },
+      "surfaces": {
+        "body": "rgb(17, 25, 29)",
+        "exams": "rgb(215, 224, 222)",
+        "lesson": null,
+        "catalogueOrExam": null,
+        "tools": "rgb(24, 33, 38)"
+      }
+    },
+    {
+      "width": 1024,
+      "height": 800,
+      "view": "catalog",
+      "viewport": {
+        "width": 1024,
+        "height": 800
+      },
+      "geometry": {
+        "clientWidth": 1009,
+        "scrollWidth": 1009,
+        "overflowPixels": 0,
+        "horizontalOverflow": false
+      },
+      "touchTargets": {
+        "checked": 57,
+        "minimumRequired": "non bloquant hors mobile",
+        "undersized": []
+      },
+      "images": [],
+      "menu": {
+        "applicable": false
+      },
+      "lessonIndex": null,
+      "grids": {
+        "exams": null,
+        "examModes": null,
+        "calculator": null,
+        "journal": null
+      },
+      "surfaces": {
+        "body": "rgb(17, 25, 29)",
+        "exams": null,
+        "lesson": null,
+        "catalogueOrExam": "rgb(215, 224, 222)",
+        "tools": null
+      }
+    },
+    {
+      "width": 1024,
+      "height": 800,
+      "view": "lesson",
+      "viewport": {
+        "width": 1024,
+        "height": 800
+      },
+      "geometry": {
+        "clientWidth": 1009,
+        "scrollWidth": 1009,
+        "overflowPixels": 0,
+        "horizontalOverflow": false
+      },
+      "touchTargets": {
+        "checked": 65,
+        "minimumRequired": "non bloquant hors mobile",
+        "undersized": []
+      },
+      "images": [
+        {
+          "src": "assets/metatrader5-market-watch.png",
+          "rendered": "683×347",
+          "intrinsicAttributes": "1363×936",
+          "zoomAvailable": true
+        },
+        {
+          "src": "assets/metatrader4-interface.png",
+          "rendered": "262×180",
+          "intrinsicAttributes": "1363×936",
+          "zoomAvailable": true
+        },
+        {
+          "src": "assets/metatrader5-market-watch.png",
+          "rendered": "262×180",
+          "intrinsicAttributes": "1363×936",
+          "zoomAvailable": true
+        },
+        {
+          "src": "assets/metatrader5-market-watch.png",
+          "rendered": "283×195",
+          "intrinsicAttributes": "1363×936",
+          "zoomAvailable": true
+        }
+      ],
+      "menu": {
+        "applicable": false
+      },
+      "lessonIndex": {
+        "position": "static",
+        "width": 685
+      },
+      "grids": {
+        "exams": null,
+        "examModes": null,
+        "calculator": null,
+        "journal": null
+      },
+      "surfaces": {
+        "body": "rgb(17, 25, 29)",
+        "exams": null,
+        "lesson": "rgb(215, 224, 222)",
+        "catalogueOrExam": null,
+        "tools": null
+      }
+    },
+    {
+      "width": 1024,
+      "height": 800,
+      "view": "calculator",
+      "viewport": {
+        "width": 1024,
+        "height": 800
+      },
+      "geometry": {
+        "clientWidth": 1009,
+        "scrollWidth": 1009,
+        "overflowPixels": 0,
+        "horizontalOverflow": false
+      },
+      "touchTargets": {
+        "checked": 50,
+        "minimumRequired": "non bloquant hors mobile",
+        "undersized": []
+      },
+      "images": [
+        {
+          "src": "assets/hero-market-briefing.svg",
+          "rendered": "683×399",
+          "intrinsicAttributes": "1200×700",
+          "zoomAvailable": true
+        },
+        {
+          "src": "assets/analysis-workbench.svg",
+          "rendered": "683×360",
+          "intrinsicAttributes": "1200×700",
+          "zoomAvailable": true
+        },
+        {
+          "src": "assets/risk-journal-sheet.svg",
+          "rendered": "683×360",
+          "intrinsicAttributes": "1200×700",
+          "zoomAvailable": true
+        }
+      ],
+      "menu": {
+        "applicable": false
+      },
+      "lessonIndex": null,
+      "grids": {
+        "exams": "204.453px 204.453px 204.453px",
+        "examModes": null,
+        "calculator": "311.5px 311.5px",
+        "journal": null
+      },
+      "surfaces": {
+        "body": "rgb(17, 25, 29)",
+        "exams": "rgb(215, 224, 222)",
+        "lesson": null,
+        "catalogueOrExam": null,
+        "tools": "rgb(24, 33, 38)"
+      }
+    },
+    {
+      "width": 1024,
+      "height": 800,
+      "view": "journal",
+      "viewport": {
+        "width": 1024,
+        "height": 800
+      },
+      "geometry": {
+        "clientWidth": 1009,
+        "scrollWidth": 1009,
+        "overflowPixels": 0,
+        "horizontalOverflow": false
+      },
+      "touchTargets": {
+        "checked": 69,
+        "minimumRequired": "non bloquant hors mobile",
+        "undersized": []
+      },
+      "images": [
+        {
+          "src": "assets/risk-journal-sheet.svg",
+          "rendered": "683×347",
+          "intrinsicAttributes": "1200×700",
+          "zoomAvailable": true
+        }
+      ],
+      "menu": {
+        "applicable": false
+      },
+      "lessonIndex": {
+        "position": "static",
+        "width": 685
+      },
+      "grids": {
+        "exams": null,
+        "examModes": null,
+        "calculator": null,
+        "journal": "289.422px 289.422px"
+      },
+      "surfaces": {
+        "body": "rgb(17, 25, 29)",
+        "exams": null,
+        "lesson": "rgb(215, 224, 222)",
+        "catalogueOrExam": null,
+        "tools": null
+      }
+    },
+    {
+      "width": 1024,
+      "height": 800,
+      "view": "exam",
+      "viewport": {
+        "width": 1024,
+        "height": 800
+      },
+      "geometry": {
+        "clientWidth": 1009,
+        "scrollWidth": 1009,
+        "overflowPixels": 0,
+        "horizontalOverflow": false
+      },
+      "touchTargets": {
+        "checked": 35,
+        "minimumRequired": "non bloquant hors mobile",
+        "undersized": []
+      },
+      "images": [],
+      "menu": {
+        "applicable": false
+      },
+      "lessonIndex": null,
+      "grids": {
+        "exams": null,
+        "examModes": "291.547px 291.547px",
+        "calculator": null,
+        "journal": null
+      },
+      "surfaces": {
+        "body": "rgb(17, 25, 29)",
+        "exams": null,
+        "lesson": null,
+        "catalogueOrExam": "rgb(215, 224, 222)",
+        "tools": null
+      }
+    },
+    {
+      "width": 1440,
+      "height": 800,
+      "view": "home",
+      "viewport": {
+        "width": 1440,
+        "height": 800
+      },
+      "geometry": {
+        "clientWidth": 1425,
+        "scrollWidth": 1425,
+        "overflowPixels": 0,
+        "horizontalOverflow": false
+      },
+      "touchTargets": {
+        "checked": 50,
+        "minimumRequired": "non bloquant hors mobile",
+        "undersized": []
+      },
+      "images": [
+        {
+          "src": "assets/hero-market-briefing.svg",
+          "rendered": "671×854",
+          "intrinsicAttributes": "1200×700",
+          "zoomAvailable": true
+        },
+        {
+          "src": "assets/analysis-workbench.svg",
+          "rendered": "593×360",
+          "intrinsicAttributes": "1200×700",
+          "zoomAvailable": true
+        },
+        {
+          "src": "assets/risk-journal-sheet.svg",
+          "rendered": "466×272",
+          "intrinsicAttributes": "1200×700",
+          "zoomAvailable": true
+        }
+      ],
+      "menu": {
+        "applicable": false
+      },
+      "lessonIndex": null,
+      "grids": {
+        "exams": "199px 199px 199px 199px 199px",
+        "examModes": null,
+        "calculator": "202.859px 202.875px",
+        "journal": null
+      },
+      "surfaces": {
+        "body": "rgb(17, 25, 29)",
+        "exams": "rgb(215, 224, 222)",
+        "lesson": null,
+        "catalogueOrExam": null,
+        "tools": "rgb(24, 33, 38)"
+      }
+    },
+    {
+      "width": 1440,
+      "height": 800,
+      "view": "catalog",
+      "viewport": {
+        "width": 1440,
+        "height": 800
+      },
+      "geometry": {
+        "clientWidth": 1425,
+        "scrollWidth": 1425,
+        "overflowPixels": 0,
+        "horizontalOverflow": false
+      },
+      "touchTargets": {
+        "checked": 57,
+        "minimumRequired": "non bloquant hors mobile",
+        "undersized": []
+      },
+      "images": [],
+      "menu": {
+        "applicable": false
+      },
+      "lessonIndex": null,
+      "grids": {
+        "exams": null,
+        "examModes": null,
+        "calculator": null,
+        "journal": null
+      },
+      "surfaces": {
+        "body": "rgb(17, 25, 29)",
+        "exams": null,
+        "lesson": null,
+        "catalogueOrExam": "rgb(215, 224, 222)",
+        "tools": null
+      }
+    },
+    {
+      "width": 1440,
+      "height": 800,
+      "view": "lesson",
+      "viewport": {
+        "width": 1440,
+        "height": 800
+      },
+      "geometry": {
+        "clientWidth": 1425,
+        "scrollWidth": 1425,
+        "overflowPixels": 0,
+        "horizontalOverflow": false
+      },
+      "touchTargets": {
+        "checked": 65,
+        "minimumRequired": "non bloquant hors mobile",
+        "undersized": []
+      },
+      "images": [
+        {
+          "src": "assets/metatrader5-market-watch.png",
+          "rendered": "773×429",
+          "intrinsicAttributes": "1363×936",
+          "zoomAvailable": true
+        },
+        {
+          "src": "assets/metatrader4-interface.png",
+          "rendered": "302×207",
+          "intrinsicAttributes": "1363×936",
+          "zoomAvailable": true
+        },
+        {
+          "src": "assets/metatrader5-market-watch.png",
+          "rendered": "302×207",
+          "intrinsicAttributes": "1363×936",
+          "zoomAvailable": true
+        },
+        {
+          "src": "assets/metatrader5-market-watch.png",
+          "rendered": "325×224",
+          "intrinsicAttributes": "1363×936",
+          "zoomAvailable": true
+        }
+      ],
+      "menu": {
+        "applicable": false
+      },
+      "lessonIndex": {
+        "position": "sticky",
+        "width": 280
+      },
+      "grids": {
+        "exams": null,
+        "examModes": null,
+        "calculator": null,
+        "journal": null
+      },
+      "surfaces": {
+        "body": "rgb(17, 25, 29)",
+        "exams": null,
+        "lesson": "rgb(215, 224, 222)",
+        "catalogueOrExam": null,
+        "tools": null
+      }
+    },
+    {
+      "width": 1440,
+      "height": 800,
+      "view": "calculator",
+      "viewport": {
+        "width": 1440,
+        "height": 800
+      },
+      "geometry": {
+        "clientWidth": 1425,
+        "scrollWidth": 1425,
+        "overflowPixels": 0,
+        "horizontalOverflow": false
+      },
+      "touchTargets": {
+        "checked": 50,
+        "minimumRequired": "non bloquant hors mobile",
+        "undersized": []
+      },
+      "images": [
+        {
+          "src": "assets/hero-market-briefing.svg",
+          "rendered": "671×854",
+          "intrinsicAttributes": "1200×700",
+          "zoomAvailable": true
+        },
+        {
+          "src": "assets/analysis-workbench.svg",
+          "rendered": "593×360",
+          "intrinsicAttributes": "1200×700",
+          "zoomAvailable": true
+        },
+        {
+          "src": "assets/risk-journal-sheet.svg",
+          "rendered": "466×272",
+          "intrinsicAttributes": "1200×700",
+          "zoomAvailable": true
+        }
+      ],
+      "menu": {
+        "applicable": false
+      },
+      "lessonIndex": null,
+      "grids": {
+        "exams": "199px 199px 199px 199px 199px",
+        "examModes": null,
+        "calculator": "202.859px 202.875px",
+        "journal": null
+      },
+      "surfaces": {
+        "body": "rgb(17, 25, 29)",
+        "exams": "rgb(215, 224, 222)",
+        "lesson": null,
+        "catalogueOrExam": null,
+        "tools": "rgb(24, 33, 38)"
+      }
+    },
+    {
+      "width": 1440,
+      "height": 800,
+      "view": "journal",
+      "viewport": {
+        "width": 1440,
+        "height": 800
+      },
+      "geometry": {
+        "clientWidth": 1425,
+        "scrollWidth": 1425,
+        "overflowPixels": 0,
+        "horizontalOverflow": false
+      },
+      "touchTargets": {
+        "checked": 69,
+        "minimumRequired": "non bloquant hors mobile",
+        "undersized": []
+      },
+      "images": [
+        {
+          "src": "assets/risk-journal-sheet.svg",
+          "rendered": "773×429",
+          "intrinsicAttributes": "1200×700",
+          "zoomAvailable": true
+        }
+      ],
+      "menu": {
+        "applicable": false
+      },
+      "lessonIndex": {
+        "position": "sticky",
+        "width": 280
+      },
+      "grids": {
+        "exams": null,
+        "examModes": null,
+        "calculator": null,
+        "journal": "328.5px 328.5px"
+      },
+      "surfaces": {
+        "body": "rgb(17, 25, 29)",
+        "exams": null,
+        "lesson": "rgb(215, 224, 222)",
+        "catalogueOrExam": null,
+        "tools": null
+      }
+    },
+    {
+      "width": 1440,
+      "height": 800,
+      "view": "exam",
+      "viewport": {
+        "width": 1440,
+        "height": 800
+      },
+      "geometry": {
+        "clientWidth": 1425,
+        "scrollWidth": 1425,
+        "overflowPixels": 0,
+        "horizontalOverflow": false
+      },
+      "touchTargets": {
+        "checked": 35,
+        "minimumRequired": "non bloquant hors mobile",
+        "undersized": []
+      },
+      "images": [],
+      "menu": {
+        "applicable": false
+      },
+      "lessonIndex": null,
+      "grids": {
+        "exams": null,
+        "examModes": "441px 441px",
+        "calculator": null,
+        "journal": null
+      },
+      "surfaces": {
+        "body": "rgb(17, 25, 29)",
+        "exams": null,
+        "lesson": null,
+        "catalogueOrExam": "rgb(215, 224, 222)",
+        "tools": null
+      }
+    },
+    {
+      "width": 1920,
+      "height": 800,
+      "view": "home",
+      "viewport": {
+        "width": 1920,
+        "height": 800
+      },
+      "geometry": {
+        "clientWidth": 1905,
+        "scrollWidth": 1905,
+        "overflowPixels": 0,
+        "horizontalOverflow": false
+      },
+      "touchTargets": {
+        "checked": 50,
+        "minimumRequired": "non bloquant hors mobile",
+        "undersized": []
+      },
+      "images": [
+        {
+          "src": "assets/hero-market-briefing.svg",
+          "rendered": "778×906",
+          "intrinsicAttributes": "1200×700",
+          "zoomAvailable": true
+        },
+        {
+          "src": "assets/analysis-workbench.svg",
+          "rendered": "689×360",
+          "intrinsicAttributes": "1200×700",
+          "zoomAvailable": true
+        },
+        {
+          "src": "assets/risk-journal-sheet.svg",
+          "rendered": "541×316",
+          "intrinsicAttributes": "1200×700",
+          "zoomAvailable": true
+        }
+      ],
+      "menu": {
+        "applicable": false
+      },
+      "lessonIndex": null,
+      "grids": {
+        "exams": "233.188px 233.203px 233.203px 233.203px 233.188px",
+        "examModes": null,
+        "calculator": "240.484px 240.484px",
+        "journal": null
+      },
+      "surfaces": {
+        "body": "rgb(17, 25, 29)",
+        "exams": "rgb(215, 224, 222)",
+        "lesson": null,
+        "catalogueOrExam": null,
+        "tools": "rgb(24, 33, 38)"
+      }
+    },
+    {
+      "width": 1920,
+      "height": 800,
+      "view": "catalog",
+      "viewport": {
+        "width": 1920,
+        "height": 800
+      },
+      "geometry": {
+        "clientWidth": 1905,
+        "scrollWidth": 1905,
+        "overflowPixels": 0,
+        "horizontalOverflow": false
+      },
+      "touchTargets": {
+        "checked": 57,
+        "minimumRequired": "non bloquant hors mobile",
+        "undersized": []
+      },
+      "images": [],
+      "menu": {
+        "applicable": false
+      },
+      "lessonIndex": null,
+      "grids": {
+        "exams": null,
+        "examModes": null,
+        "calculator": null,
+        "journal": null
+      },
+      "surfaces": {
+        "body": "rgb(17, 25, 29)",
+        "exams": null,
+        "lesson": null,
+        "catalogueOrExam": "rgb(215, 224, 222)",
+        "tools": null
+      }
+    },
+    {
+      "width": 1920,
+      "height": 800,
+      "view": "lesson",
+      "viewport": {
+        "width": 1920,
+        "height": 800
+      },
+      "geometry": {
+        "clientWidth": 1905,
+        "scrollWidth": 1905,
+        "overflowPixels": 0,
+        "horizontalOverflow": false
+      },
+      "touchTargets": {
+        "checked": 65,
+        "minimumRequired": "non bloquant hors mobile",
+        "undersized": []
+      },
+      "images": [
+        {
+          "src": "assets/metatrader5-market-watch.png",
+          "rendered": "944×429",
+          "intrinsicAttributes": "1363×936",
+          "zoomAvailable": true
+        },
+        {
+          "src": "assets/metatrader4-interface.png",
+          "rendered": "355×244",
+          "intrinsicAttributes": "1363×936",
+          "zoomAvailable": true
+        },
+        {
+          "src": "assets/metatrader5-market-watch.png",
+          "rendered": "355×244",
+          "intrinsicAttributes": "1363×936",
+          "zoomAvailable": true
+        },
+        {
+          "src": "assets/metatrader5-market-watch.png",
+          "rendered": "382×263",
+          "intrinsicAttributes": "1363×936",
+          "zoomAvailable": true
+        }
+      ],
+      "menu": {
+        "applicable": false
+      },
+      "lessonIndex": {
+        "position": "sticky",
+        "width": 280
+      },
+      "grids": {
+        "exams": null,
+        "examModes": null,
+        "calculator": null,
+        "journal": null
+      },
+      "surfaces": {
+        "body": "rgb(17, 25, 29)",
+        "exams": null,
+        "lesson": "rgb(215, 224, 222)",
+        "catalogueOrExam": null,
+        "tools": null
+      }
+    },
+    {
+      "width": 1920,
+      "height": 800,
+      "view": "calculator",
+      "viewport": {
+        "width": 1920,
+        "height": 800
+      },
+      "geometry": {
+        "clientWidth": 1905,
+        "scrollWidth": 1905,
+        "overflowPixels": 0,
+        "horizontalOverflow": false
+      },
+      "touchTargets": {
+        "checked": 50,
+        "minimumRequired": "non bloquant hors mobile",
+        "undersized": []
+      },
+      "images": [
+        {
+          "src": "assets/hero-market-briefing.svg",
+          "rendered": "778×906",
+          "intrinsicAttributes": "1200×700",
+          "zoomAvailable": true
+        },
+        {
+          "src": "assets/analysis-workbench.svg",
+          "rendered": "689×360",
+          "intrinsicAttributes": "1200×700",
+          "zoomAvailable": true
+        },
+        {
+          "src": "assets/risk-journal-sheet.svg",
+          "rendered": "541×316",
+          "intrinsicAttributes": "1200×700",
+          "zoomAvailable": true
+        }
+      ],
+      "menu": {
+        "applicable": false
+      },
+      "lessonIndex": null,
+      "grids": {
+        "exams": "233.188px 233.203px 233.203px 233.203px 233.188px",
+        "examModes": null,
+        "calculator": "240.484px 240.484px",
+        "journal": null
+      },
+      "surfaces": {
+        "body": "rgb(17, 25, 29)",
+        "exams": "rgb(215, 224, 222)",
+        "lesson": null,
+        "catalogueOrExam": null,
+        "tools": "rgb(24, 33, 38)"
+      }
+    },
+    {
+      "width": 1920,
+      "height": 800,
+      "view": "journal",
+      "viewport": {
+        "width": 1920,
+        "height": 800
+      },
+      "geometry": {
+        "clientWidth": 1905,
+        "scrollWidth": 1905,
+        "overflowPixels": 0,
+        "horizontalOverflow": false
+      },
+      "touchTargets": {
+        "checked": 69,
+        "minimumRequired": "non bloquant hors mobile",
+        "undersized": []
+      },
+      "images": [
+        {
+          "src": "assets/risk-journal-sheet.svg",
+          "rendered": "944×429",
+          "intrinsicAttributes": "1200×700",
+          "zoomAvailable": true
+        }
+      ],
+      "menu": {
+        "applicable": false
+      },
+      "lessonIndex": {
+        "position": "sticky",
+        "width": 280
+      },
+      "grids": {
+        "exams": null,
+        "examModes": null,
+        "calculator": null,
+        "journal": "382px 382px"
+      },
+      "surfaces": {
+        "body": "rgb(17, 25, 29)",
+        "exams": null,
+        "lesson": "rgb(215, 224, 222)",
+        "catalogueOrExam": null,
+        "tools": null
+      }
+    },
+    {
+      "width": 1920,
+      "height": 800,
+      "view": "exam",
+      "viewport": {
+        "width": 1920,
+        "height": 800
+      },
+      "geometry": {
+        "clientWidth": 1905,
+        "scrollWidth": 1905,
+        "overflowPixels": 0,
+        "horizontalOverflow": false
+      },
+      "touchTargets": {
+        "checked": 35,
+        "minimumRequired": "non bloquant hors mobile",
+        "undersized": []
+      },
+      "images": [],
+      "menu": {
+        "applicable": false
+      },
+      "lessonIndex": null,
+      "grids": {
+        "exams": null,
+        "examModes": "441px 441px",
+        "calculator": null,
+        "journal": null
+      },
+      "surfaces": {
+        "body": "rgb(17, 25, 29)",
+        "exams": null,
+        "lesson": null,
+        "catalogueOrExam": "rgb(215, 224, 222)",
+        "tools": null
+      }
+    }
+  ]
+}

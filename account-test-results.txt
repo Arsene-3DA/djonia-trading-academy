@@ -1,0 +1,1546 @@
+TAP version 13
+# Subtest: architecture générale : 30 modules, 150 leçons, 5 niveaux et 5 masterclass
+ok 1 - architecture générale : 30 modules, 150 leçons, 5 niveaux et 5 masterclass
+  ---
+  duration_ms: 1.961899
+  type: 'test'
+  ...
+# Subtest: Module 01 — Découverte du trading et des marchés
+    # Subtest: identité, ordre et niveau
+    ok 1 - identité, ordre et niveau
+      ---
+      duration_ms: 0.184962
+      type: 'test'
+      ...
+    # Subtest: cinq leçons numérotées et uniques
+    ok 2 - cinq leçons numérotées et uniques
+      ---
+      duration_ms: 0.156811
+      type: 'test'
+      ...
+    # Subtest: contenu détaillé et densité pédagogique
+    ok 3 - contenu détaillé et densité pédagogique
+      ---
+      duration_ms: 0.354081
+      type: 'test'
+      ...
+    # Subtest: notions, erreurs et exercice
+    ok 4 - notions, erreurs et exercice
+      ---
+      duration_ms: 0.167366
+      type: 'test'
+      ...
+    # Subtest: quiz local : trois questions valides et distracteurs uniques
+    ok 5 - quiz local : trois questions valides et distracteurs uniques
+      ---
+      duration_ms: 0.276107
+      type: 'test'
+      ...
+    # Subtest: sources et illustration accessibles dans le paquet
+    ok 6 - sources et illustration accessibles dans le paquet
+      ---
+      duration_ms: 0.31971
+      type: 'test'
+      ...
+    1..6
+ok 2 - Module 01 — Découverte du trading et des marchés
+  ---
+  duration_ms: 2.130016
+  type: 'test'
+  ...
+# Subtest: Module 02 — TradingView de zéro
+    # Subtest: identité, ordre et niveau
+    ok 1 - identité, ordre et niveau
+      ---
+      duration_ms: 0.113818
+      type: 'test'
+      ...
+    # Subtest: cinq leçons numérotées et uniques
+    ok 2 - cinq leçons numérotées et uniques
+      ---
+      duration_ms: 0.134918
+      type: 'test'
+      ...
+    # Subtest: contenu détaillé et densité pédagogique
+    ok 3 - contenu détaillé et densité pédagogique
+      ---
+      duration_ms: 0.215657
+      type: 'test'
+      ...
+    # Subtest: notions, erreurs et exercice
+    ok 4 - notions, erreurs et exercice
+      ---
+      duration_ms: 0.066758
+      type: 'test'
+      ...
+    # Subtest: quiz local : trois questions valides et distracteurs uniques
+    ok 5 - quiz local : trois questions valides et distracteurs uniques
+      ---
+      duration_ms: 0.516811
+      type: 'test'
+      ...
+    # Subtest: sources et illustration accessibles dans le paquet
+    ok 6 - sources et illustration accessibles dans le paquet
+      ---
+      duration_ms: 0.106867
+      type: 'test'
+      ...
+    1..6
+ok 3 - Module 02 — TradingView de zéro
+  ---
+  duration_ms: 1.820199
+  type: 'test'
+  ...
+# Subtest: Module 03 — MT4 et MT5 de zéro
+    # Subtest: identité, ordre et niveau
+    ok 1 - identité, ordre et niveau
+      ---
+      duration_ms: 0.041561
+      type: 'test'
+      ...
+    # Subtest: cinq leçons numérotées et uniques
+    ok 2 - cinq leçons numérotées et uniques
+      ---
+      duration_ms: 0.086007
+      type: 'test'
+      ...
+    # Subtest: contenu détaillé et densité pédagogique
+    ok 3 - contenu détaillé et densité pédagogique
+      ---
+      duration_ms: 0.153697
+      type: 'test'
+      ...
+    # Subtest: notions, erreurs et exercice
+    ok 4 - notions, erreurs et exercice
+      ---
+      duration_ms: 0.046529
+      type: 'test'
+      ...
+    # Subtest: quiz local : trois questions valides et distracteurs uniques
+    ok 5 - quiz local : trois questions valides et distracteurs uniques
+      ---
+      duration_ms: 0.074199
+      type: 'test'
+      ...
+    # Subtest: sources et illustration accessibles dans le paquet
+    ok 6 - sources et illustration accessibles dans le paquet
+      ---
+      duration_ms: 0.068261
+      type: 'test'
+      ...
+    1..6
+ok 4 - Module 03 — MT4 et MT5 de zéro
+  ---
+  duration_ms: 0.919875
+  type: 'test'
+  ...
+# Subtest: Module 04 — Mécanique du prix
+    # Subtest: identité, ordre et niveau
+    ok 1 - identité, ordre et niveau
+      ---
+      duration_ms: 0.035513
+      type: 'test'
+      ...
+    # Subtest: cinq leçons numérotées et uniques
+    ok 2 - cinq leçons numérotées et uniques
+      ---
+      duration_ms: 0.038697
+      type: 'test'
+      ...
+    # Subtest: contenu détaillé et densité pédagogique
+    ok 3 - contenu détaillé et densité pédagogique
+      ---
+      duration_ms: 0.180726
+      type: 'test'
+      ...
+    # Subtest: notions, erreurs et exercice
+    ok 4 - notions, erreurs et exercice
+      ---
+      duration_ms: 0.058075
+      type: 'test'
+      ...
+    # Subtest: quiz local : trois questions valides et distracteurs uniques
+    ok 5 - quiz local : trois questions valides et distracteurs uniques
+      ---
+      duration_ms: 0.069432
+      type: 'test'
+      ...
+    # Subtest: sources et illustration accessibles dans le paquet
+    ok 6 - sources et illustration accessibles dans le paquet
+      ---
+      duration_ms: 0.085116
+      type: 'test'
+      ...
+    1..6
+ok 5 - Module 04 — Mécanique du prix
+  ---
+  duration_ms: 0.700301
+  type: 'test'
+  ...
+# Subtest: Module 05 — Pips, points, ticks et lots
+    # Subtest: identité, ordre et niveau
+    ok 1 - identité, ordre et niveau
+      ---
+      duration_ms: 0.058226
+      type: 'test'
+      ...
+    # Subtest: cinq leçons numérotées et uniques
+    ok 2 - cinq leçons numérotées et uniques
+      ---
+      duration_ms: 0.048812
+      type: 'test'
+      ...
+    # Subtest: contenu détaillé et densité pédagogique
+    ok 3 - contenu détaillé et densité pédagogique
+      ---
+      duration_ms: 0.113567
+      type: 'test'
+      ...
+    # Subtest: notions, erreurs et exercice
+    ok 4 - notions, erreurs et exercice
+      ---
+      duration_ms: 0.028572
+      type: 'test'
+      ...
+    # Subtest: quiz local : trois questions valides et distracteurs uniques
+    ok 5 - quiz local : trois questions valides et distracteurs uniques
+      ---
+      duration_ms: 0.056464
+      type: 'test'
+      ...
+    # Subtest: sources et illustration accessibles dans le paquet
+    ok 6 - sources et illustration accessibles dans le paquet
+      ---
+      duration_ms: 0.08856
+      type: 'test'
+      ...
+    1..6
+ok 6 - Module 05 — Pips, points, ticks et lots
+  ---
+  duration_ms: 0.598701
+  type: 'test'
+  ...
+# Subtest: Module 06 — Levier et marge
+    # Subtest: identité, ordre et niveau
+    ok 1 - identité, ordre et niveau
+      ---
+      duration_ms: 0.060018
+      type: 'test'
+      ...
+    # Subtest: cinq leçons numérotées et uniques
+    ok 2 - cinq leçons numérotées et uniques
+      ---
+      duration_ms: 0.04772
+      type: 'test'
+      ...
+    # Subtest: contenu détaillé et densité pédagogique
+    ok 3 - contenu détaillé et densité pédagogique
+      ---
+      duration_ms: 0.254655
+      type: 'test'
+      ...
+    # Subtest: notions, erreurs et exercice
+    ok 4 - notions, erreurs et exercice
+      ---
+      duration_ms: 0.104073
+      type: 'test'
+      ...
+    # Subtest: quiz local : trois questions valides et distracteurs uniques
+    ok 5 - quiz local : trois questions valides et distracteurs uniques
+      ---
+      duration_ms: 0.059818
+      type: 'test'
+      ...
+    # Subtest: sources et illustration accessibles dans le paquet
+    ok 6 - sources et illustration accessibles dans le paquet
+      ---
+      duration_ms: 0.049733
+      type: 'test'
+      ...
+    1..6
+ok 7 - Module 06 — Levier et marge
+  ---
+  duration_ms: 1.123244
+  type: 'test'
+  ...
+# Subtest: Module 07 — Les types d’ordres
+    # Subtest: identité, ordre et niveau
+    ok 1 - identité, ordre et niveau
+      ---
+      duration_ms: 0.075111
+      type: 'test'
+      ...
+    # Subtest: cinq leçons numérotées et uniques
+    ok 2 - cinq leçons numérotées et uniques
+      ---
+      duration_ms: 0.065096
+      type: 'test'
+      ...
+    # Subtest: contenu détaillé et densité pédagogique
+    ok 3 - contenu détaillé et densité pédagogique
+      ---
+      duration_ms: 0.188207
+      type: 'test'
+      ...
+    # Subtest: notions, erreurs et exercice
+    ok 4 - notions, erreurs et exercice
+      ---
+      duration_ms: 0.069352
+      type: 'test'
+      ...
+    # Subtest: quiz local : trois questions valides et distracteurs uniques
+    ok 5 - quiz local : trois questions valides et distracteurs uniques
+      ---
+      duration_ms: 0.071626
+      type: 'test'
+      ...
+    # Subtest: sources et illustration accessibles dans le paquet
+    ok 6 - sources et illustration accessibles dans le paquet
+      ---
+      duration_ms: 0.117202
+      type: 'test'
+      ...
+    1..6
+ok 8 - Module 07 — Les types d’ordres
+  ---
+  duration_ms: 0.832245
+  type: 'test'
+  ...
+# Subtest: Module 08 — Calcul de taille de position
+    # Subtest: identité, ordre et niveau
+    ok 1 - identité, ordre et niveau
+      ---
+      duration_ms: 0.064124
+      type: 'test'
+      ...
+    # Subtest: cinq leçons numérotées et uniques
+    ok 2 - cinq leçons numérotées et uniques
+      ---
+      duration_ms: 0.049233
+      type: 'test'
+      ...
+    # Subtest: contenu détaillé et densité pédagogique
+    ok 3 - contenu détaillé et densité pédagogique
+      ---
+      duration_ms: 0.141077
+      type: 'test'
+      ...
+    # Subtest: notions, erreurs et exercice
+    ok 4 - notions, erreurs et exercice
+      ---
+      duration_ms: 0.03386
+      type: 'test'
+      ...
+    # Subtest: quiz local : trois questions valides et distracteurs uniques
+    ok 5 - quiz local : trois questions valides et distracteurs uniques
+      ---
+      duration_ms: 0.105205
+      type: 'test'
+      ...
+    # Subtest: sources et illustration accessibles dans le paquet
+    ok 6 - sources et illustration accessibles dans le paquet
+      ---
+      duration_ms: 0.050505
+      type: 'test'
+      ...
+    1..6
+ok 9 - Module 08 — Calcul de taille de position
+  ---
+  duration_ms: 0.67229
+  type: 'test'
+  ...
+# Subtest: Module 09 — Gestion du risque
+    # Subtest: identité, ordre et niveau
+    ok 1 - identité, ordre et niveau
+      ---
+      duration_ms: 0.055282
+      type: 'test'
+      ...
+    # Subtest: cinq leçons numérotées et uniques
+    ok 2 - cinq leçons numérotées et uniques
+      ---
+      duration_ms: 0.043154
+      type: 'test'
+      ...
+    # Subtest: contenu détaillé et densité pédagogique
+    ok 3 - contenu détaillé et densité pédagogique
+      ---
+      duration_ms: 0.172954
+      type: 'test'
+      ...
+    # Subtest: notions, erreurs et exercice
+    ok 4 - notions, erreurs et exercice
+      ---
+      duration_ms: 0.056343
+      type: 'test'
+      ...
+    # Subtest: quiz local : trois questions valides et distracteurs uniques
+    ok 5 - quiz local : trois questions valides et distracteurs uniques
+      ---
+      duration_ms: 0.063393
+      type: 'test'
+      ...
+    # Subtest: sources et illustration accessibles dans le paquet
+    ok 6 - sources et illustration accessibles dans le paquet
+      ---
+      duration_ms: 0.043153
+      type: 'test'
+      ...
+    1..6
+ok 10 - Module 09 — Gestion du risque
+  ---
+  duration_ms: 0.662316
+  type: 'test'
+  ...
+# Subtest: Module 10 — Bases de l’analyse technique
+    # Subtest: identité, ordre et niveau
+    ok 1 - identité, ordre et niveau
+      ---
+      duration_ms: 0.037275
+      type: 'test'
+      ...
+    # Subtest: cinq leçons numérotées et uniques
+    ok 2 - cinq leçons numérotées et uniques
+      ---
+      duration_ms: 0.088059
+      type: 'test'
+      ...
+    # Subtest: contenu détaillé et densité pédagogique
+    ok 3 - contenu détaillé et densité pédagogique
+      ---
+      duration_ms: 0.151613
+      type: 'test'
+      ...
+    # Subtest: notions, erreurs et exercice
+    ok 4 - notions, erreurs et exercice
+      ---
+      duration_ms: 0.06093
+      type: 'test'
+      ...
+    # Subtest: quiz local : trois questions valides et distracteurs uniques
+    ok 5 - quiz local : trois questions valides et distracteurs uniques
+      ---
+      duration_ms: 0.092736
+      type: 'test'
+      ...
+    # Subtest: sources et illustration accessibles dans le paquet
+    ok 6 - sources et illustration accessibles dans le paquet
+      ---
+      duration_ms: 0.052708
+      type: 'test'
+      ...
+    1..6
+ok 11 - Module 10 — Bases de l’analyse technique
+  ---
+  duration_ms: 0.806067
+  type: 'test'
+  ...
+# Subtest: Module 11 — Structure de marché
+    # Subtest: identité, ordre et niveau
+    ok 1 - identité, ordre et niveau
+      ---
+      duration_ms: 0.035583
+      type: 'test'
+      ...
+    # Subtest: cinq leçons numérotées et uniques
+    ok 2 - cinq leçons numérotées et uniques
+      ---
+      duration_ms: 0.035562
+      type: 'test'
+      ...
+    # Subtest: contenu détaillé et densité pédagogique
+    ok 3 - contenu détaillé et densité pédagogique
+      ---
+      duration_ms: 0.210439
+      type: 'test'
+      ...
+    # Subtest: notions, erreurs et exercice
+    ok 4 - notions, erreurs et exercice
+      ---
+      duration_ms: 0.034911
+      type: 'test'
+      ...
+    # Subtest: quiz local : trois questions valides et distracteurs uniques
+    ok 5 - quiz local : trois questions valides et distracteurs uniques
+      ---
+      duration_ms: 0.043824
+      type: 'test'
+      ...
+    # Subtest: sources et illustration accessibles dans le paquet
+    ok 6 - sources et illustration accessibles dans le paquet
+      ---
+      duration_ms: 0.041961
+      type: 'test'
+      ...
+    1..6
+ok 12 - Module 11 — Structure de marché
+  ---
+  duration_ms: 0.594135
+  type: 'test'
+  ...
+# Subtest: Module 12 — Liquidité
+    # Subtest: identité, ordre et niveau
+    ok 1 - identité, ordre et niveau
+      ---
+      duration_ms: 0.030064
+      type: 'test'
+      ...
+    # Subtest: cinq leçons numérotées et uniques
+    ok 2 - cinq leçons numérotées et uniques
+      ---
+      duration_ms: 0.078336
+      type: 'test'
+      ...
+    # Subtest: contenu détaillé et densité pédagogique
+    ok 3 - contenu détaillé et densité pédagogique
+      ---
+      duration_ms: 0.136852
+      type: 'test'
+      ...
+    # Subtest: notions, erreurs et exercice
+    ok 4 - notions, erreurs et exercice
+      ---
+      duration_ms: 0.02732
+      type: 'test'
+      ...
+    # Subtest: quiz local : trois questions valides et distracteurs uniques
+    ok 5 - quiz local : trois questions valides et distracteurs uniques
+      ---
+      duration_ms: 0.076823
+      type: 'test'
+      ...
+    # Subtest: sources et illustration accessibles dans le paquet
+    ok 6 - sources et illustration accessibles dans le paquet
+      ---
+      duration_ms: 0.041481
+      type: 'test'
+      ...
+    1..6
+ok 13 - Module 12 — Liquidité
+  ---
+  duration_ms: 0.582428
+  type: 'test'
+  ...
+# Subtest: Module 13 — ICT / Smart Money Concepts
+    # Subtest: identité, ordre et niveau
+    ok 1 - identité, ordre et niveau
+      ---
+      duration_ms: 0.037636
+      type: 'test'
+      ...
+    # Subtest: cinq leçons numérotées et uniques
+    ok 2 - cinq leçons numérotées et uniques
+      ---
+      duration_ms: 0.03383
+      type: 'test'
+      ...
+    # Subtest: contenu détaillé et densité pédagogique
+    ok 3 - contenu détaillé et densité pédagogique
+      ---
+      duration_ms: 0.15678
+      type: 'test'
+      ...
+    # Subtest: notions, erreurs et exercice
+    ok 4 - notions, erreurs et exercice
+      ---
+      duration_ms: 0.030785
+      type: 'test'
+      ...
+    # Subtest: quiz local : trois questions valides et distracteurs uniques
+    ok 5 - quiz local : trois questions valides et distracteurs uniques
+      ---
+      duration_ms: 0.045056
+      type: 'test'
+      ...
+    # Subtest: sources et illustration accessibles dans le paquet
+    ok 6 - sources et illustration accessibles dans le paquet
+      ---
+      duration_ms: 0.066107
+      type: 'test'
+      ...
+    1..6
+ok 14 - Module 13 — ICT / Smart Money Concepts
+  ---
+  duration_ms: 0.579272
+  type: 'test'
+  ...
+# Subtest: Module 14 — Wyckoff
+    # Subtest: identité, ordre et niveau
+    ok 1 - identité, ordre et niveau
+      ---
+      duration_ms: 0.033078
+      type: 'test'
+      ...
+    # Subtest: cinq leçons numérotées et uniques
+    ok 2 - cinq leçons numérotées et uniques
+      ---
+      duration_ms: 0.037395
+      type: 'test'
+      ...
+    # Subtest: contenu détaillé et densité pédagogique
+    ok 3 - contenu détaillé et densité pédagogique
+      ---
+      duration_ms: 0.143672
+      type: 'test'
+      ...
+    # Subtest: notions, erreurs et exercice
+    ok 4 - notions, erreurs et exercice
+      ---
+      duration_ms: 0.033169
+      type: 'test'
+      ...
+    # Subtest: quiz local : trois questions valides et distracteurs uniques
+    ok 5 - quiz local : trois questions valides et distracteurs uniques
+      ---
+      duration_ms: 0.138153
+      type: 'test'
+      ...
+    # Subtest: sources et illustration accessibles dans le paquet
+    ok 6 - sources et illustration accessibles dans le paquet
+      ---
+      duration_ms: 0.194377
+      type: 'test'
+      ...
+    1..6
+ok 15 - Module 14 — Wyckoff
+  ---
+  duration_ms: 1.359081
+  type: 'test'
+  ...
+# Subtest: Module 15 — Relier Wyckoff et ICT/SMC
+    # Subtest: identité, ordre et niveau
+    ok 1 - identité, ordre et niveau
+      ---
+      duration_ms: 0.051706
+      type: 'test'
+      ...
+    # Subtest: cinq leçons numérotées et uniques
+    ok 2 - cinq leçons numérotées et uniques
+      ---
+      duration_ms: 0.049262
+      type: 'test'
+      ...
+    # Subtest: contenu détaillé et densité pédagogique
+    ok 3 - contenu détaillé et densité pédagogique
+      ---
+      duration_ms: 1.438522
+      type: 'test'
+      ...
+    # Subtest: notions, erreurs et exercice
+    ok 4 - notions, erreurs et exercice
+      ---
+      duration_ms: 0.145344
+      type: 'test'
+      ...
+    # Subtest: quiz local : trois questions valides et distracteurs uniques
+    ok 5 - quiz local : trois questions valides et distracteurs uniques
+      ---
+      duration_ms: 0.064625
+      type: 'test'
+      ...
+    # Subtest: sources et illustration accessibles dans le paquet
+    ok 6 - sources et illustration accessibles dans le paquet
+      ---
+      duration_ms: 0.058827
+      type: 'test'
+      ...
+    1..6
+ok 16 - Module 15 — Relier Wyckoff et ICT/SMC
+  ---
+  duration_ms: 2.417514
+  type: 'test'
+  ...
+# Subtest: Module 16 — Analyse multi-timeframe
+    # Subtest: identité, ordre et niveau
+    ok 1 - identité, ordre et niveau
+      ---
+      duration_ms: 0.036454
+      type: 'test'
+      ...
+    # Subtest: cinq leçons numérotées et uniques
+    ok 2 - cinq leçons numérotées et uniques
+      ---
+      duration_ms: 0.04767
+      type: 'test'
+      ...
+    # Subtest: contenu détaillé et densité pédagogique
+    ok 3 - contenu détaillé et densité pédagogique
+      ---
+      duration_ms: 0.097053
+      type: 'test'
+      ...
+    # Subtest: notions, erreurs et exercice
+    ok 4 - notions, erreurs et exercice
+      ---
+      duration_ms: 0.027421
+      type: 'test'
+      ...
+    # Subtest: quiz local : trois questions valides et distracteurs uniques
+    ok 5 - quiz local : trois questions valides et distracteurs uniques
+      ---
+      duration_ms: 0.033119
+      type: 'test'
+      ...
+    # Subtest: sources et illustration accessibles dans le paquet
+    ok 6 - sources et illustration accessibles dans le paquet
+      ---
+      duration_ms: 0.040199
+      type: 'test'
+      ...
+    1..6
+ok 17 - Module 16 — Analyse multi-timeframe
+  ---
+  duration_ms: 0.491333
+  type: 'test'
+  ...
+# Subtest: Module 17 — Sessions de trading
+    # Subtest: identité, ordre et niveau
+    ok 1 - identité, ordre et niveau
+      ---
+      duration_ms: 0.082612
+      type: 'test'
+      ...
+    # Subtest: cinq leçons numérotées et uniques
+    ok 2 - cinq leçons numérotées et uniques
+      ---
+      duration_ms: 0.033059
+      type: 'test'
+      ...
+    # Subtest: contenu détaillé et densité pédagogique
+    ok 3 - contenu détaillé et densité pédagogique
+      ---
+      duration_ms: 0.091735
+      type: 'test'
+      ...
+    # Subtest: notions, erreurs et exercice
+    ok 4 - notions, erreurs et exercice
+      ---
+      duration_ms: 0.022794
+      type: 'test'
+      ...
+    # Subtest: quiz local : trois questions valides et distracteurs uniques
+    ok 5 - quiz local : trois questions valides et distracteurs uniques
+      ---
+      duration_ms: 0.029052
+      type: 'test'
+      ...
+    # Subtest: sources et illustration accessibles dans le paquet
+    ok 6 - sources et illustration accessibles dans le paquet
+      ---
+      duration_ms: 0.035092
+      type: 'test'
+      ...
+    1..6
+ok 18 - Module 17 — Sessions de trading
+  ---
+  duration_ms: 0.447569
+  type: 'test'
+  ...
+# Subtest: Module 18 — Volume et Order Flow
+    # Subtest: identité, ordre et niveau
+    ok 1 - identité, ordre et niveau
+      ---
+      duration_ms: 0.029344
+      type: 'test'
+      ...
+    # Subtest: cinq leçons numérotées et uniques
+    ok 2 - cinq leçons numérotées et uniques
+      ---
+      duration_ms: 0.030915
+      type: 'test'
+      ...
+    # Subtest: contenu détaillé et densité pédagogique
+    ok 3 - contenu détaillé et densité pédagogique
+      ---
+      duration_ms: 0.100438
+      type: 'test'
+      ...
+    # Subtest: notions, erreurs et exercice
+    ok 4 - notions, erreurs et exercice
+      ---
+      duration_ms: 0.025808
+      type: 'test'
+      ...
+    # Subtest: quiz local : trois questions valides et distracteurs uniques
+    ok 5 - quiz local : trois questions valides et distracteurs uniques
+      ---
+      duration_ms: 0.032628
+      type: 'test'
+      ...
+    # Subtest: sources et illustration accessibles dans le paquet
+    ok 6 - sources et illustration accessibles dans le paquet
+      ---
+      duration_ms: 0.06789
+      type: 'test'
+      ...
+    1..6
+ok 19 - Module 18 — Volume et Order Flow
+  ---
+  duration_ms: 0.463723
+  type: 'test'
+  ...
+# Subtest: Module 19 — Construction d’un setup
+    # Subtest: identité, ordre et niveau
+    ok 1 - identité, ordre et niveau
+      ---
+      duration_ms: 0.026379
+      type: 'test'
+      ...
+    # Subtest: cinq leçons numérotées et uniques
+    ok 2 - cinq leçons numérotées et uniques
+      ---
+      duration_ms: 0.030294
+      type: 'test'
+      ...
+    # Subtest: contenu détaillé et densité pédagogique
+    ok 3 - contenu détaillé et densité pédagogique
+      ---
+      duration_ms: 0.146716
+      type: 'test'
+      ...
+    # Subtest: notions, erreurs et exercice
+    ok 4 - notions, erreurs et exercice
+      ---
+      duration_ms: 0.028632
+      type: 'test'
+      ...
+    # Subtest: quiz local : trois questions valides et distracteurs uniques
+    ok 5 - quiz local : trois questions valides et distracteurs uniques
+      ---
+      duration_ms: 0.039989
+      type: 'test'
+      ...
+    # Subtest: sources et illustration accessibles dans le paquet
+    ok 6 - sources et illustration accessibles dans le paquet
+      ---
+      duration_ms: 0.037575
+      type: 'test'
+      ...
+    1..6
+ok 20 - Module 19 — Construction d’un setup
+  ---
+  duration_ms: 0.568247
+  type: 'test'
+  ...
+# Subtest: Module 20 — Stratégie de trading
+    # Subtest: identité, ordre et niveau
+    ok 1 - identité, ordre et niveau
+      ---
+      duration_ms: 0.028061
+      type: 'test'
+      ...
+    # Subtest: cinq leçons numérotées et uniques
+    ok 2 - cinq leçons numérotées et uniques
+      ---
+      duration_ms: 0.049603
+      type: 'test'
+      ...
+    # Subtest: contenu détaillé et densité pédagogique
+    ok 3 - contenu détaillé et densité pédagogique
+      ---
+      duration_ms: 0.091885
+      type: 'test'
+      ...
+    # Subtest: notions, erreurs et exercice
+    ok 4 - notions, erreurs et exercice
+      ---
+      duration_ms: 0.043263
+      type: 'test'
+      ...
+    # Subtest: quiz local : trois questions valides et distracteurs uniques
+    ok 5 - quiz local : trois questions valides et distracteurs uniques
+      ---
+      duration_ms: 0.063644
+      type: 'test'
+      ...
+    # Subtest: sources et illustration accessibles dans le paquet
+    ok 6 - sources et illustration accessibles dans le paquet
+      ---
+      duration_ms: 0.800027
+      type: 'test'
+      ...
+    1..6
+ok 21 - Module 20 — Stratégie de trading
+  ---
+  duration_ms: 1.54232
+  type: 'test'
+  ...
+# Subtest: Module 21 — Backtesting et statistiques
+    # Subtest: identité, ordre et niveau
+    ok 1 - identité, ordre et niveau
+      ---
+      duration_ms: 0.038096
+      type: 'test'
+      ...
+    # Subtest: cinq leçons numérotées et uniques
+    ok 2 - cinq leçons numérotées et uniques
+      ---
+      duration_ms: 0.035373
+      type: 'test'
+      ...
+    # Subtest: contenu détaillé et densité pédagogique
+    ok 3 - contenu détaillé et densité pédagogique
+      ---
+      duration_ms: 0.096222
+      type: 'test'
+      ...
+    # Subtest: notions, erreurs et exercice
+    ok 4 - notions, erreurs et exercice
+      ---
+      duration_ms: 0.027621
+      type: 'test'
+      ...
+    # Subtest: quiz local : trois questions valides et distracteurs uniques
+    ok 5 - quiz local : trois questions valides et distracteurs uniques
+      ---
+      duration_ms: 0.034791
+      type: 'test'
+      ...
+    # Subtest: sources et illustration accessibles dans le paquet
+    ok 6 - sources et illustration accessibles dans le paquet
+      ---
+      duration_ms: 0.039689
+      type: 'test'
+      ...
+    1..6
+ok 22 - Module 21 — Backtesting et statistiques
+  ---
+  duration_ms: 0.44161
+  type: 'test'
+  ...
+# Subtest: Module 22 — Journal de trading
+    # Subtest: identité, ordre et niveau
+    ok 1 - identité, ordre et niveau
+      ---
+      duration_ms: 0.057295
+      type: 'test'
+      ...
+    # Subtest: cinq leçons numérotées et uniques
+    ok 2 - cinq leçons numérotées et uniques
+      ---
+      duration_ms: 0.036294
+      type: 'test'
+      ...
+    # Subtest: contenu détaillé et densité pédagogique
+    ok 3 - contenu détaillé et densité pédagogique
+      ---
+      duration_ms: 0.117403
+      type: 'test'
+      ...
+    # Subtest: notions, erreurs et exercice
+    ok 4 - notions, erreurs et exercice
+      ---
+      duration_ms: 0.028232
+      type: 'test'
+      ...
+    # Subtest: quiz local : trois questions valides et distracteurs uniques
+    ok 5 - quiz local : trois questions valides et distracteurs uniques
+      ---
+      duration_ms: 0.040329
+      type: 'test'
+      ...
+    # Subtest: sources et illustration accessibles dans le paquet
+    ok 6 - sources et illustration accessibles dans le paquet
+      ---
+      duration_ms: 0.055101
+      type: 'test'
+      ...
+    1..6
+ok 23 - Module 22 — Journal de trading
+  ---
+  duration_ms: 0.57036
+  type: 'test'
+  ...
+# Subtest: Module 23 — Psychologie et discipline
+    # Subtest: identité, ordre et niveau
+    ok 1 - identité, ordre et niveau
+      ---
+      duration_ms: 0.02757
+      type: 'test'
+      ...
+    # Subtest: cinq leçons numérotées et uniques
+    ok 2 - cinq leçons numérotées et uniques
+      ---
+      duration_ms: 0.031947
+      type: 'test'
+      ...
+    # Subtest: contenu détaillé et densité pédagogique
+    ok 3 - contenu détaillé et densité pédagogique
+      ---
+      duration_ms: 0.095531
+      type: 'test'
+      ...
+    # Subtest: notions, erreurs et exercice
+    ok 4 - notions, erreurs et exercice
+      ---
+      duration_ms: 0.022143
+      type: 'test'
+      ...
+    # Subtest: quiz local : trois questions valides et distracteurs uniques
+    ok 5 - quiz local : trois questions valides et distracteurs uniques
+      ---
+      duration_ms: 0.031516
+      type: 'test'
+      ...
+    # Subtest: sources et illustration accessibles dans le paquet
+    ok 6 - sources et illustration accessibles dans le paquet
+      ---
+      duration_ms: 0.035162
+      type: 'test'
+      ...
+    1..6
+ok 24 - Module 23 — Psychologie et discipline
+  ---
+  duration_ms: 0.388122
+  type: 'test'
+  ...
+# Subtest: Module 24 — Pratique sur compte démo
+    # Subtest: identité, ordre et niveau
+    ok 1 - identité, ordre et niveau
+      ---
+      duration_ms: 0.063263
+      type: 'test'
+      ...
+    # Subtest: cinq leçons numérotées et uniques
+    ok 2 - cinq leçons numérotées et uniques
+      ---
+      duration_ms: 0.036043
+      type: 'test'
+      ...
+    # Subtest: contenu détaillé et densité pédagogique
+    ok 3 - contenu détaillé et densité pédagogique
+      ---
+      duration_ms: 0.125515
+      type: 'test'
+      ...
+    # Subtest: notions, erreurs et exercice
+    ok 4 - notions, erreurs et exercice
+      ---
+      duration_ms: 0.027
+      type: 'test'
+      ...
+    # Subtest: quiz local : trois questions valides et distracteurs uniques
+    ok 5 - quiz local : trois questions valides et distracteurs uniques
+      ---
+      duration_ms: 0.031567
+      type: 'test'
+      ...
+    # Subtest: sources et illustration accessibles dans le paquet
+    ok 6 - sources et illustration accessibles dans le paquet
+      ---
+      duration_ms: 0.037044
+      type: 'test'
+      ...
+    1..6
+ok 25 - Module 24 — Pratique sur compte démo
+  ---
+  duration_ms: 0.580415
+  type: 'test'
+  ...
+# Subtest: Module 25 — Préparation au passage au réel
+    # Subtest: identité, ordre et niveau
+    ok 1 - identité, ordre et niveau
+      ---
+      duration_ms: 0.08207
+      type: 'test'
+      ...
+    # Subtest: cinq leçons numérotées et uniques
+    ok 2 - cinq leçons numérotées et uniques
+      ---
+      duration_ms: 0.052877
+      type: 'test'
+      ...
+    # Subtest: contenu détaillé et densité pédagogique
+    ok 3 - contenu détaillé et densité pédagogique
+      ---
+      duration_ms: 0.128419
+      type: 'test'
+      ...
+    # Subtest: notions, erreurs et exercice
+    ok 4 - notions, erreurs et exercice
+      ---
+      duration_ms: 0.03381
+      type: 'test'
+      ...
+    # Subtest: quiz local : trois questions valides et distracteurs uniques
+    ok 5 - quiz local : trois questions valides et distracteurs uniques
+      ---
+      duration_ms: 0.085035
+      type: 'test'
+      ...
+    # Subtest: sources et illustration accessibles dans le paquet
+    ok 6 - sources et illustration accessibles dans le paquet
+      ---
+      duration_ms: 0.070584
+      type: 'test'
+      ...
+    1..6
+ok 26 - Module 25 — Préparation au passage au réel
+  ---
+  duration_ms: 0.662305
+  type: 'test'
+  ...
+# Subtest: Module 26 — Masterclass Offre et Demande
+    # Subtest: identité, ordre et niveau
+    ok 1 - identité, ordre et niveau
+      ---
+      duration_ms: 0.058997
+      type: 'test'
+      ...
+    # Subtest: cinq leçons numérotées et uniques
+    ok 2 - cinq leçons numérotées et uniques
+      ---
+      duration_ms: 0.058115
+      type: 'test'
+      ...
+    # Subtest: contenu détaillé et densité pédagogique
+    ok 3 - contenu détaillé et densité pédagogique
+      ---
+      duration_ms: 0.186064
+      type: 'test'
+      ...
+    # Subtest: notions, erreurs et exercice
+    ok 4 - notions, erreurs et exercice
+      ---
+      duration_ms: 0.07522
+      type: 'test'
+      ...
+    # Subtest: quiz local : trois questions valides et distracteurs uniques
+    ok 5 - quiz local : trois questions valides et distracteurs uniques
+      ---
+      duration_ms: 0.086427
+      type: 'test'
+      ...
+    # Subtest: sources et illustration accessibles dans le paquet
+    ok 6 - sources et illustration accessibles dans le paquet
+      ---
+      duration_ms: 0.083723
+      type: 'test'
+      ...
+    1..6
+ok 27 - Module 26 — Masterclass Offre et Demande
+  ---
+  duration_ms: 0.907556
+  type: 'test'
+  ...
+# Subtest: Module 27 — Maîtriser l’offre et la demande en trading
+    # Subtest: identité, ordre et niveau
+    ok 1 - identité, ordre et niveau
+      ---
+      duration_ms: 0.035623
+      type: 'test'
+      ...
+    # Subtest: cinq leçons numérotées et uniques
+    ok 2 - cinq leçons numérotées et uniques
+      ---
+      duration_ms: 0.035282
+      type: 'test'
+      ...
+    # Subtest: contenu détaillé et densité pédagogique
+    ok 3 - contenu détaillé et densité pédagogique
+      ---
+      duration_ms: 0.130052
+      type: 'test'
+      ...
+    # Subtest: notions, erreurs et exercice
+    ok 4 - notions, erreurs et exercice
+      ---
+      duration_ms: 0.02715
+      type: 'test'
+      ...
+    # Subtest: quiz local : trois questions valides et distracteurs uniques
+    ok 5 - quiz local : trois questions valides et distracteurs uniques
+      ---
+      duration_ms: 0.030535
+      type: 'test'
+      ...
+    # Subtest: sources et illustration accessibles dans le paquet
+    ok 6 - sources et illustration accessibles dans le paquet
+      ---
+      duration_ms: 0.037886
+      type: 'test'
+      ...
+    1..6
+ok 28 - Module 27 — Maîtriser l’offre et la demande en trading
+  ---
+  duration_ms: 0.493306
+  type: 'test'
+  ...
+# Subtest: Module 28 — L’Ordre des Baleines : flux d’ordres et empreinte institutionnelle
+    # Subtest: identité, ordre et niveau
+    ok 1 - identité, ordre et niveau
+      ---
+      duration_ms: 0.031907
+      type: 'test'
+      ...
+    # Subtest: cinq leçons numérotées et uniques
+    ok 2 - cinq leçons numérotées et uniques
+      ---
+      duration_ms: 0.052047
+      type: 'test'
+      ...
+    # Subtest: contenu détaillé et densité pédagogique
+    ok 3 - contenu détaillé et densité pédagogique
+      ---
+      duration_ms: 0.132645
+      type: 'test'
+      ...
+    # Subtest: notions, erreurs et exercice
+    ok 4 - notions, erreurs et exercice
+      ---
+      duration_ms: 0.02747
+      type: 'test'
+      ...
+    # Subtest: quiz local : trois questions valides et distracteurs uniques
+    ok 5 - quiz local : trois questions valides et distracteurs uniques
+      ---
+      duration_ms: 0.038376
+      type: 'test'
+      ...
+    # Subtest: sources et illustration accessibles dans le paquet
+    ok 6 - sources et illustration accessibles dans le paquet
+      ---
+      duration_ms: 0.064865
+      type: 'test'
+      ...
+    1..6
+ok 29 - Module 28 — L’Ordre des Baleines : flux d’ordres et empreinte institutionnelle
+  ---
+  duration_ms: 1.214088
+  type: 'test'
+  ...
+# Subtest: Module 29 — Masterclass Flux de commandes — Modèles d’exécution avancés
+    # Subtest: identité, ordre et niveau
+    ok 1 - identité, ordre et niveau
+      ---
+      duration_ms: 0.030165
+      type: 'test'
+      ...
+    # Subtest: cinq leçons numérotées et uniques
+    ok 2 - cinq leçons numérotées et uniques
+      ---
+      duration_ms: 0.033169
+      type: 'test'
+      ...
+    # Subtest: contenu détaillé et densité pédagogique
+    ok 3 - contenu détaillé et densité pédagogique
+      ---
+      duration_ms: 0.137492
+      type: 'test'
+      ...
+    # Subtest: notions, erreurs et exercice
+    ok 4 - notions, erreurs et exercice
+      ---
+      duration_ms: 0.026779
+      type: 'test'
+      ...
+    # Subtest: quiz local : trois questions valides et distracteurs uniques
+    ok 5 - quiz local : trois questions valides et distracteurs uniques
+      ---
+      duration_ms: 0.053779
+      type: 'test'
+      ...
+    # Subtest: sources et illustration accessibles dans le paquet
+    ok 6 - sources et illustration accessibles dans le paquet
+      ---
+      duration_ms: 0.041421
+      type: 'test'
+      ...
+    1..6
+ok 30 - Module 29 — Masterclass Flux de commandes — Modèles d’exécution avancés
+  ---
+  duration_ms: 0.523331
+  type: 'test'
+  ...
+# Subtest: Module 30 — Masterclass sur les indices : US30, NAS100, GER40
+    # Subtest: identité, ordre et niveau
+    ok 1 - identité, ordre et niveau
+      ---
+      duration_ms: 0.066698
+      type: 'test'
+      ...
+    # Subtest: cinq leçons numérotées et uniques
+    ok 2 - cinq leçons numérotées et uniques
+      ---
+      duration_ms: 0.053649
+      type: 'test'
+      ...
+    # Subtest: contenu détaillé et densité pédagogique
+    ok 3 - contenu détaillé et densité pédagogique
+      ---
+      duration_ms: 0.107218
+      type: 'test'
+      ...
+    # Subtest: notions, erreurs et exercice
+    ok 4 - notions, erreurs et exercice
+      ---
+      duration_ms: 0.025788
+      type: 'test'
+      ...
+    # Subtest: quiz local : trois questions valides et distracteurs uniques
+    ok 5 - quiz local : trois questions valides et distracteurs uniques
+      ---
+      duration_ms: 0.032137
+      type: 'test'
+      ...
+    # Subtest: sources et illustration accessibles dans le paquet
+    ok 6 - sources et illustration accessibles dans le paquet
+      ---
+      duration_ms: 0.035973
+      type: 'test'
+      ...
+    1..6
+ok 31 - Module 30 — Masterclass sur les indices : US30, NAS100, GER40
+  ---
+  duration_ms: 0.473778
+  type: 'test'
+  ...
+# Subtest: les modules de séquence et les cinq masterclass possèdent une question dédiée
+ok 32 - les modules de séquence et les cinq masterclass possèdent une question dédiée
+  ---
+  duration_ms: 0.093948
+  type: 'test'
+  ...
+# Subtest: chaque examen contient exactement dix questions fonctionnelles
+ok 33 - chaque examen contient exactement dix questions fonctionnelles
+  ---
+  duration_ms: 0.288705
+  type: 'test'
+  ...
+# Subtest: les 30 modules ont une illustration principale existante
+ok 34 - les 30 modules ont une illustration principale existante
+  ---
+  duration_ms: 0.091124
+  type: 'test'
+  ...
+# Subtest: les masterclass respectent leur périmètre pédagogique
+ok 35 - les masterclass respectent leur périmètre pédagogique
+  ---
+  duration_ms: 0.412267
+  type: 'test'
+  ...
+# Subtest: les 30 synthèses sont complètes, uniques et rattachées à leur contenu
+ok 36 - les 30 synthèses sont complètes, uniques et rattachées à leur contenu
+  ---
+  duration_ms: 0.615616
+  type: 'test'
+  ...
+# Subtest: les trois cas intégrés combinent réellement plusieurs modules et imposent une validation globale
+ok 37 - les trois cas intégrés combinent réellement plusieurs modules et imposent une validation globale
+  ---
+  duration_ms: 0.554206
+  type: 'test'
+  ...
+# Subtest: chaque module dispose d’au moins trois sources réelles, distinctes et documentées
+ok 38 - chaque module dispose d’au moins trois sources réelles, distinctes et documentées
+  ---
+  duration_ms: 0.344898
+  type: 'test'
+  ...
+# Subtest: les cas D, E et F croisent le cœur du cours et signalent la limite statistique
+ok 39 - les cas D, E et F croisent le cœur du cours et signalent la limite statistique
+  ---
+  duration_ms: 0.235227
+  type: 'test'
+  ...
+# Subtest: la stratégie Djonia SSR contient règles, calculs et trois déroulés distincts
+ok 40 - la stratégie Djonia SSR contient règles, calculs et trois déroulés distincts
+  ---
+  duration_ms: 0.358217
+  type: 'test'
+  ...
+# Subtest: les scripts se chargent dans l’ordre contenu → application → enrichissement
+ok 41 - les scripts se chargent dans l’ordre contenu → application → enrichissement
+  ---
+  duration_ms: 1.358099
+  type: 'test'
+  ...
+# Subtest: tous les contrôles permanents ont une liaison de clic ou de changement
+ok 42 - tous les contrôles permanents ont une liaison de clic ou de changement
+  ---
+  duration_ms: 0.452566
+  type: 'test'
+  ...
+# Subtest: les contrôles dynamiques essentiels sont reliés
+ok 43 - les contrôles dynamiques essentiels sont reliés
+  ---
+  duration_ms: 1.12746
+  type: 'test'
+  ...
+# Subtest: la numérotation reste visible même après validation
+ok 44 - la numérotation reste visible même après validation
+  ---
+  duration_ms: 0.429512
+  type: 'test'
+  ...
+# Subtest: le stockage local est protégé par un repli mémoire
+ok 45 - le stockage local est protégé par un repli mémoire
+  ---
+  duration_ms: 0.598762
+  type: 'test'
+  ...
+# Subtest: toutes les ressources locales référencées existent
+ok 46 - toutes les ressources locales référencées existent
+  ---
+  duration_ms: 0.814409
+  type: 'test'
+  ...
+# Subtest: le code JavaScript principal ne contient plus l’ancien tirage otherConcepts
+ok 47 - le code JavaScript principal ne contient plus l’ancien tirage otherConcepts
+  ---
+  duration_ms: 0.333481
+  type: 'test'
+  ...
+# Subtest: la grille d’examens est une surface Papier et les tirets décoratifs ont disparu
+ok 48 - la grille d’examens est une surface Papier et les tirets décoratifs ont disparu
+  ---
+  duration_ms: 0.547396
+  type: 'test'
+  ...
+# Subtest: toutes les images dynamiques reçoivent des dimensions intrinsèques
+ok 49 - toutes les images dynamiques reçoivent des dimensions intrinsèques
+  ---
+  duration_ms: 0.469071
+  type: 'test'
+  ...
+# Subtest: les garde-fous responsive couvrent mobile, tablette et images détaillées
+ok 50 - les garde-fous responsive couvrent mobile, tablette et images détaillées
+  ---
+  duration_ms: 0.46198
+  type: 'test'
+  ...
+# Subtest: les agrandissements utilisent une modale en place et accessible
+ok 51 - les agrandissements utilisent une modale en place et accessible
+  ---
+  duration_ms: 0.562599
+  type: 'test'
+  ...
+# Subtest: les trois SVG principaux conservent leur cadrage et le hero est corrigé
+ok 52 - les trois SVG principaux conservent leur cadrage et le hero est corrigé
+  ---
+  duration_ms: 0.419367
+  type: 'test'
+  ...
+# Subtest: le Guide Orderflow reste une méthode sans automatisation de signal
+ok 53 - le Guide Orderflow reste une méthode sans automatisation de signal
+  ---
+  duration_ms: 0.352268
+  type: 'test'
+  ...
+# Subtest: le rendu place sources, synthèse, quiz puis cas intégré dans l’ordre pédagogique
+ok 54 - le rendu place sources, synthèse, quiz puis cas intégré dans l’ordre pédagogique
+  ---
+  duration_ms: 0.357576
+  type: 'test'
+  ...
+# Subtest: la stratégie complète est rendue dans le module 20 avec ses trois issues
+ok 55 - la stratégie complète est rendue dans le module 20 avec ses trois issues
+  ---
+  duration_ms: 0.215398
+  type: 'test'
+  ...
+# Subtest: intégration sans localStorage : le site reste navigable et avertit l’élève
+ok 56 - intégration sans localStorage : le site reste navigable et avertit l’élève
+  ---
+  duration_ms: 153.496547
+  type: 'test'
+  ...
+# Subtest: intégration pédagogique : 30 synthèses et trois cas à correction progressive
+ok 57 - intégration pédagogique : 30 synthèses et trois cas à correction progressive
+  ---
+  duration_ms: 418.878811
+  type: 'test'
+  ...
+# Subtest: intégration premium : sources minimales et stratégie SSR complète
+ok 58 - intégration premium : sources minimales et stratégie SSR complète
+  ---
+  duration_ms: 382.246494
+  type: 'test'
+  ...
+# Subtest: intégration complète : les 30 modules, 150 validations et toutes les numérotations
+ok 59 - intégration complète : les 30 modules, 150 validations et toutes les numérotations
+  ---
+  duration_ms: 3048.057264
+  type: 'test'
+  ...
+# Subtest: intégration du tableau de bord : navigation, recherche, filtres, thème et calculateurs
+ok 60 - intégration du tableau de bord : navigation, recherche, filtres, thème et calculateurs
+  ---
+  duration_ms: 167.247857
+  type: 'test'
+  ...
+# Subtest: intégration visuelle : examens Papier, repères fonctionnels et aperçu du journal agrandissable
+ok 61 - intégration visuelle : examens Papier, repères fonctionnels et aperçu du journal agrandissable
+  ---
+  duration_ms: 33.504806
+  type: 'test'
+  ...
+# Subtest: intégration modale : agrandissement en place, zoom, Échap, clic extérieur et retour du focus
+ok 62 - intégration modale : agrandissement en place, zoom, Échap, clic extérieur et retour du focus
+  ---
+  duration_ms: 43.755583
+  type: 'test'
+  ...
+# Subtest: intégration des cinq examens : entraînement et chronomètre
+ok 63 - intégration des cinq examens : entraînement et chronomètre
+  ---
+  duration_ms: 203.643224
+  type: 'test'
+  ...
+# Subtest: intégration du journal : ajout, persistance locale et exports CSV/JSON
+ok 64 - intégration du journal : ajout, persistance locale et exports CSV/JSON
+  ---
+  duration_ms: 46.469133
+  type: 'test'
+  ...
+# Subtest: FundedNext : seuils exacts pour chaque modèle et phase
+ok 65 - FundedNext : seuils exacts pour chaque modèle et phase
+  ---
+  duration_ms: 40.057303
+  type: 'test'
+  ...
+# Subtest: FundedNext : calcul Montréal selon date et décalage serveur
+ok 66 - FundedNext : calcul Montréal selon date et décalage serveur
+  ---
+  duration_ms: 28.872627
+  type: 'test'
+  ...
+# Subtest: FundedNext : navigation, sélection, validation et retour accueil
+ok 67 - FundedNext : navigation, sélection, validation et retour accueil
+  ---
+  duration_ms: 58.375312
+  type: 'test'
+  ...
+# Subtest: Comptes : mode non configuré honnête et deux indicateurs séparés
+ok 68 - Comptes : mode non configuré honnête et deux indicateurs séparés
+  ---
+  duration_ms: 31.19128
+  type: 'test'
+  ...
+# Subtest: Comptes : A et B isolés, invité non importé, journal et retour au parcours
+ok 69 - Comptes : A et B isolés, invité non importé, journal et retour au parcours
+  ---
+  duration_ms: 215.539873
+  type: 'test'
+  ...
+# Subtest: Comptes : échec réseau visible puis nouvelle tentative sans perte
+ok 70 - Comptes : échec réseau visible puis nouvelle tentative sans perte
+  ---
+  duration_ms: 113.668954
+  type: 'test'
+  ...
+# Subtest: Comptes : un conflit ne remplace pas les données du deuxième appareil
+ok 71 - Comptes : un conflit ne remplace pas les données du deuxième appareil
+  ---
+  duration_ms: 110.766666
+  type: 'test'
+  ...
+1..71
+# tests 251
+# suites 0
+# pass 251
+# fail 0
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 7460.728482

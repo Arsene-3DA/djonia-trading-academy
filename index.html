@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Formation interactive et détaillée de trading pour débutant absolu : 25 modules progressifs, 5 masterclass à la carte, 150 leçons, exercices, quiz et gestion du risque.">
+  <meta name="theme-color" content="#182126">
+  <title>Djonia Trading Academy — Formation complète</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&family=Source+Serif+4:opsz,wght@8..60,600;8..60,700&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='8' fill='%23182126'/%3E%3Cpath d='M15 45V30m0 4h8v8h-8M31 41V17m0 7h8v11h-8M47 47V27m0 5h8v10h-8' fill='none' stroke='%23eef1ee' stroke-width='3'/%3E%3Cpath d='M11 50h44' stroke='%23d9a441' stroke-width='3'/%3E%3Ccircle cx='35' cy='18' r='3' fill='%2333c795'/%3E%3C/svg%3E">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="app-shell">
+    <aside class="sidebar" id="sidebar" aria-label="Navigation de la formation">
+      <button class="sidebar-close" id="sidebarCloseButton" type="button" aria-label="Fermer le menu">×</button>
+      <button class="brand brand-home" id="brandHomeButton" type="button" aria-label="Retourner à la page d’accueil" title="Retour à l’accueil">
+        <span class="brand-mark" aria-hidden="true"><i></i><i></i><i></i></span>
+        <span><strong>Djonia</strong><small>Trading Academy</small></span>
+      </button>
+
+      <button class="dashboard-link active" data-view="dashboard">
+        <span class="nav-icon">⌂</span>
+        Tableau de bord
+      </button>
+
+      <button class="dashboard-link fundednext-link" id="fundedNextButton" type="button"><span class="nav-icon" aria-hidden="true">☑</span>Règles FundedNext</button>
+      <button class="dashboard-link" id="accountButton" type="button">Mon compte élève</button>
+      <div class="sidebar-label">Parcours complet</div>
+      <div class="module-list" id="moduleList"></div>
+
+      <div class="sidebar-card">
+        <div class="sidebar-card-top"><span>Progression</span><strong id="sidebarProgressText">0%</strong></div>
+        <div class="progress-track"><span id="sidebarProgressBar"></span></div>
+        <small id="sidebarProgressCount">0 leçon terminée</small>
+      </div>
+    </aside>
+
+    <button class="sidebar-backdrop" id="sidebarBackdrop" type="button" aria-label="Fermer le menu de navigation" hidden></button>
+
+    <main class="main">
+      <header class="topbar">
+        <button class="menu-button" id="menuButton" aria-label="Ouvrir le menu" aria-expanded="false">☰</button>
+        <div class="search-wrap">
+          <span aria-hidden="true">⌕</span>
+          <input id="courseSearch" type="search" placeholder="Rechercher un module ou une notion…" aria-label="Rechercher dans la formation">
+          <kbd>Ctrl K</kbd>
+        </div>
+        <div class="search-filters" aria-label="Filtres du catalogue">
+          <label><span>Niveau</span><select id="levelFilter"><option value="all">Tous</option><option value="1">Niveau 1</option><option value="2">Niveau 2</option><option value="3">Niveau 3</option><option value="4">Niveau 4</option><option value="5">Niveau 5</option></select></label>
+          <label><span>Contenu</span><select id="toolFilter"><option value="all">Tout</option><option value="calculator">Calculateur</option><option value="quiz">Quiz</option><option value="graphic">Exercice graphique</option><option value="journal">Journal</option></select></label>
+        </div>
+        <div class="top-actions">
+          <button class="icon-button" id="themeButton" aria-label="Changer le thème">☼</button>
+          <button class="profile-button" id="profileButton" aria-label="Afficher mon parcours"><span>FL</span><span class="profile-copy">Mon parcours<small>Élève</small></span></button>
+        </div>
+      </header>
+
+      <div class="content" id="content" tabindex="-1"></div>
+    </main>
+  </div>
+
+  <div class="image-modal" id="imageModal" role="dialog" aria-modal="true" aria-labelledby="imageModalTitle" hidden>
+    <div class="image-modal-panel" role="document">
+      <div class="image-modal-toolbar">
+        <div>
+          <strong id="imageModalTitle">Illustration agrandie</strong>
+          <small>Utilise les boutons de zoom ou le geste de pincement sur mobile.</small>
+        </div>
+        <div class="image-modal-controls">
+          <button class="modal-button" id="imageZoomOut" type="button" aria-label="Réduire l’illustration">−</button>
+          <output id="imageZoomValue" aria-live="polite">100 %</output>
+          <button class="modal-button" id="imageZoomIn" type="button" aria-label="Agrandir davantage l’illustration">+</button>
+          <button class="modal-button modal-close" id="imageModalClose" type="button" aria-label="Fermer l’illustration agrandie">×</button>
+        </div>
+      </div>
+      <div class="image-modal-stage" id="imageModalStage" tabindex="0">
+        <img id="imageModalContent" src="" alt="" width="1200" height="700">
+      </div>
+    </div>
+  </div>
+
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+  <script src="course-content.js"></script>
+  <script src="app.js"></script>
+  <script src="course-enrichment.js"></script>
+  <script src="fundednext.js"></script>
+  <script src="account-config.js"></script>
+  <script src="accounts.js"></script>
+</body>
+</html>

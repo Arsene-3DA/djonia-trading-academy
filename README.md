@@ -1,0 +1,1 @@
+# djonia-trading-academy
