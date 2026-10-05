@@ -1,9 +1,43 @@
 const { test, expect } = require("@playwright/test");
 
 test.beforeEach(async ({ page }) => {
+  await page.addInitScript(() => {
+    const records = new Map();
+    window.supabase = {
+      createClient: () => ({
+        from: () => ({
+          select: () => ({
+            eq: () => ({
+              maybeSingle: async () => ({ data: records.get("student") || null, error: null })
+            })
+          })
+        }),
+        rpc: async (_name, args) => {
+          const old = records.get("student") || { revision: 0 };
+          if (old.revision !== args.expected_revision) return { data: null, error: new Error("conflict") };
+          const revision = old.revision + 1;
+          records.set("student", { revision, payload: JSON.parse(JSON.stringify(args.new_payload)) });
+          return { data: revision, error: null };
+        },
+        auth: {
+          getSession: async () => ({
+            data: { session: { user: { id: "student", email: "student@example.test" } } },
+            error: null
+          }),
+          onAuthStateChange: () => ({ data: { subscription: { unsubscribe: () => {} } } }),
+          signOut: async () => ({ error: null }),
+          updateUser: async () => ({ data: {}, error: null }),
+          resetPasswordForEmail: async () => ({ data: {}, error: null }),
+          signInWithOAuth: async () => ({ data: {}, error: null })
+        }
+      })
+    };
+  });
   await page.goto("/");
   await page.evaluate(() => localStorage.clear());
   await page.reload();
+  await expect(page.locator(".account-page")).toBeVisible();
+  await page.locator('[data-view="dashboard"]').click();
 });
 
 test("les 30 modules sont accessibles, ordonnés et complets", async ({ page }) => {

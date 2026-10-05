@@ -5,8 +5,8 @@
  const defaults={djoniaCompleted:[],djoniaCompletedLessons:[],djoniaJournal:[],djoniaExamScores:{},djoniaQuizScores:{},djoniaLastModule:null};
  const clone=x=>JSON.parse(JSON.stringify(x));
  const localRead=safeStorage.read.bind(safeStorage),localWrite=safeStorage.write.bind(safeStorage);
- let client=null,user=null,cache=clone(defaults),revision=0,dirty=false,saving=false,blocked=false,ready=false,epoch=0;
- let status='Mode invité · sauvegarde dans ce navigateur';
+ let client=null,user=null,cache=clone(defaults),revision=0,dirty=false,saving=false,blocked=false,ready=false,epoch=0,authChecked=false;
+ let status='Connexion requise pour accéder à la formation';
  const configured=!!(config.url&&config.publishableKey);
  function announce(message){status=message;document.getElementById('accountStatus').textContent=message;}
  function hydrate(data){
@@ -51,12 +51,28 @@
   if(!/^https:\/\/[a-z0-9-]+\.supabase\.co\/?$/i.test(config.url))throw Error('URL Supabase invalide.');
   if(config.publishableKey.startsWith('sb_secret_'))throw Error('Utilise uniquement la clé publique publishable.');
   if(!window.supabase) await new Promise((resolve,reject)=>{const script=document.createElement('script');script.src='https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2.117.2/dist/umd/supabase.js';script.onload=resolve;script.onerror=()=>{script.remove();reject(Error('Impossible de charger le service de connexion.'));};document.head.append(script);});
-  client=window.supabase.createClient(config.url,config.publishableKey,{auth:{persistSession:false,autoRefreshToken:true,detectSessionInUrl:false}});
+  client=window.supabase.createClient(config.url,config.publishableKey,{auth:{persistSession:true,autoRefreshToken:true,detectSessionInUrl:true}});
   return client;
+ }
+ async function signInWithGoogle(){
+  try{
+   const c=await getClient();
+   const {error}=await c.auth.signInWithOAuth({provider:'google',options:{redirectTo:location.href.split('#')[0]}});
+   if(error)throw error;
+   announce('Redirection vers Google…');
+  }catch{announce('Connexion Google impossible. Vérifie la configuration Supabase et Google OAuth.');renderAccount();}
+ }
+ async function sendPasswordReset(email){
+  const c=await getClient();
+  return c.auth.resetPasswordForEmail(email,{redirectTo:location.href.split('#')[0]+'#reset-password'});
+ }
+ async function updatePassword(password){
+  const c=await getClient();
+  return c.auth.updateUser({password});
  }
  async function logout(){
   if(dirty&&!confirm('Des modifications ne sont pas synchronisées. Exporte-les dans Mon compte avant de quitter. Quitter quand même ?'))return;
-  ++epoch;user=null;ready=false;cache=clone(defaults);dirty=false;saving=false;blocked=false;hydrate(localSnapshot());announce('Mode invité · sauvegarde dans ce navigateur');renderAccount();
+  ++epoch;user=null;ready=false;cache=clone(defaults);dirty=false;saving=false;blocked=false;hydrate(localSnapshot());announce('Connexion requise pour accéder à la formation');renderAccount();
   if(client){try{await client.auth.signOut({scope:'local'});}catch{}}
  }
  function exportData(){const blob=new Blob([JSON.stringify({version:1,progress:cache},null,2)],{type:'application/json'});const url=URL.createObjectURL(blob);const a=document.createElement('a');a.href=url;a.download='djonia-ma-progression.json';a.click();setTimeout(()=>URL.revokeObjectURL(url),1000);}
@@ -65,35 +81,59 @@
   const total=modules.reduce((n,m)=>n+m.lessons.length,0);
   const done=modules.reduce((n,m)=>n+m.lessons.filter((_,i)=>state.completedLessons.has(`${m.id}:${i}`)).length,0);
   const mastered=modules.filter(m=>Number(state.quizScores?.[m.id])>=80).length;
-  content.innerHTML=`<section class="account-page"><h1>Mon compte élève</h1><p>${user?esc(user.email):'Invité — ce parcours appartient au navigateur, pas à une personne identifiée.'}</p>
+  content.innerHTML=`<section class="account-page"><h1>${user?'Mon compte élève':'Connexion obligatoire'}</h1><p>${user?esc(user.email):'Connecte-toi pour accéder à la formation, enregistrer ta progression et protéger ton parcours.'}</p>
    <div class="account-metrics"><article><h2>Parcours terminé</h2><strong>${done}/${total} leçons · ${Math.round(done/total*100)} %</strong><progress max="${total}" value="${done}" aria-label="Leçons terminées"></progress></article><article><h2>Modules réussis au quiz</h2><strong>${mastered}/${modules.length}</strong><progress max="${modules.length}" value="${mastered}" aria-label="Modules réussis au quiz"></progress><p>Meilleur score ≥ 80 %. Indicateur d’entraînement, pas une certification ; les cas intégrés restent à réussir.</p></article></div>
    <p role="status" id="accountMessage">${esc(status)}</p>
-   ${user?`<p>Ta progression, tes scores, ta dernière leçon et ton journal sont enregistrés dans ton compte. La session reste en mémoire : reconnecte-toi après avoir fermé ou rechargé la page.</p><div class="account-actions"><button id="accountResume">Reprendre mon parcours</button><button id="accountRetry">Réessayer la synchronisation</button><button id="accountExport">Exporter mes données</button><button id="accountReload">Recharger la version du compte</button><button id="accountLogout">Me déconnecter</button></div>`:
-   configured?`<p>Connexion ou création de compte par code reçu par courriel. Aucune progression invité n’est importée automatiquement.</p><form id="accountEmailForm"><label>Adresse courriel<input name="email" type="email" autocomplete="email" required maxlength="254"></label><button>Recevoir mon code</button></form><form id="accountCodeForm" hidden><label>Code reçu par courriel<input name="code" inputmode="numeric" autocomplete="one-time-code" required pattern="[0-9]{6,10}" minlength="6" maxlength="10"></label><button>Me connecter</button></form><p>Les données nécessaires au compte (courriel, progression, scores et journal saisi) seront traitées par le service Supabase configuré par Djonia.</p>`:
+   ${user?`<p>Ta progression, tes scores, ta dernière leçon et ton journal sont enregistrés dans ton compte.</p><div class="account-actions"><button id="accountResume">Reprendre mon parcours</button><button id="accountRetry">Réessayer la synchronisation</button><button id="accountExport">Exporter mes données</button><button id="accountReload">Recharger la version du compte</button><button id="accountLogout">Me déconnecter</button></div><details class="account-password"><summary>Modifier mon mot de passe Supabase</summary><p>Les comptes Google changent leur mot de passe directement chez Google. Cette option sert aux comptes email/mot de passe Supabase.</p><form id="accountPasswordForm"><label>Nouveau mot de passe<input name="password" type="password" autocomplete="new-password" required minlength="8" maxlength="72"></label><button>Mettre à jour le mot de passe</button></form></details>`:
+   configured?`<div class="account-login-panel"><p>L’accès aux modules demande une connexion. Utilise ton compte Google pour continuer.</p><button id="accountGoogleLogin" class="account-google" type="button">Continuer avec Google</button></div><details class="account-password"><summary>Mot de passe oublié ?</summary><p>Si tu utilises Google, réinitialise ton mot de passe depuis ton compte Google. Si Djonia t’a créé un compte email/mot de passe Supabase, demande un lien de réinitialisation ici.</p><form id="accountResetForm"><label>Adresse courriel<input name="email" type="email" autocomplete="email" required maxlength="254"></label><button>Recevoir un lien de réinitialisation</button></form><form id="accountRecoveryForm" hidden><label>Nouveau mot de passe<input name="password" type="password" autocomplete="new-password" required minlength="8" maxlength="72"></label><button>Enregistrer le nouveau mot de passe</button></form></details><p>Les données nécessaires au compte seront traitées par le service Supabase configuré par Djonia.</p>`:
    `<p><strong>Les comptes en ligne attendent leur activation.</strong> Le propriétaire doit renseigner account-config.js et installer supabase/schema.sql. Les cours restent accessibles en mode invité. Aucun compte fictif n’est créé.</p>`}
-   <button id="accountHome">Retour à l’accueil</button></section>`;
+   ${user||!configured?'<button id="accountHome">Retour à l’accueil</button>':''}</section>`;
   const message=t=>{announce(t);const el=document.getElementById('accountMessage');if(el)el.textContent=t;};
-  document.getElementById('accountHome').onclick=renderDashboard;
+  document.getElementById('accountHome')?.addEventListener('click',renderDashboard);
   if(user){
    document.getElementById('accountLogout').onclick=logout;
    document.getElementById('accountExport').onclick=exportData;
    document.getElementById('accountRetry').onclick=async()=>{blocked=false;await flush();message(status);};
    document.getElementById('accountReload').onclick=async()=>{if(confirm('Remplacer la version affichée par celle du compte ? Exporte les modifications non synchronisées avant de continuer.')){const {data}=await client.auth.getSession();if(data.session)await loadAccount(data.session);}};
    document.getElementById('accountResume').onclick=()=>{const id=cache.djoniaLastModule;openModule(modules.some(m=>m.id===id)?id:(modules.find(m=>lessonProgress(m.id).pct<100)?.id||1));};
-  }else if(configured){
-   let email='';
-   document.getElementById('accountEmailForm').onsubmit=async event=>{
-    event.preventDefault();email=event.currentTarget.elements.email.value.trim();const button=event.currentTarget.querySelector('button');button.disabled=true;
-    try{const c=await getClient();const {error}=await c.auth.signInWithOtp({email,options:{shouldCreateUser:true}});if(error)throw error;message('Si l’envoi est autorisé, un code arrive par courriel. Vérifie aussi les indésirables.');document.getElementById('accountCodeForm').hidden=false;}
-    catch{message('Envoi impossible. Vérifie la connexion et la configuration, puis réessaie.');}finally{button.disabled=false;}
+   document.getElementById('accountPasswordForm').onsubmit=async event=>{
+    event.preventDefault();const button=event.currentTarget.querySelector('button');button.disabled=true;
+    try{const {error}=await updatePassword(event.currentTarget.elements.password.value);if(error)throw error;event.currentTarget.reset();message('Mot de passe mis à jour.');}
+    catch{message('Modification impossible. Pour un compte Google, utilise la récupération Google.');}finally{button.disabled=false;}
    };
-   document.getElementById('accountCodeForm').onsubmit=async event=>{
-    event.preventDefault();const token=event.currentTarget.elements.code.value;const button=event.currentTarget.querySelector('button');button.disabled=true;
-    try{const {data,error}=await client.auth.verifyOtp({email,token,type:'email'});if(error||!data.session)throw error;await loadAccount(data.session);}
-    catch{message('Code invalide ou expiré, ou connexion indisponible. Demande un nouveau code si nécessaire.');}finally{button.disabled=false;}
+  }else if(configured){
+   document.getElementById('accountGoogleLogin').onclick=signInWithGoogle;
+   const recoveryForm=document.getElementById('accountRecoveryForm');
+   if(location.hash==='#reset-password')recoveryForm.hidden=false;
+   document.getElementById('accountResetForm').onsubmit=async event=>{
+    event.preventDefault();const button=event.currentTarget.querySelector('button');button.disabled=true;
+    try{const {error}=await sendPasswordReset(event.currentTarget.elements.email.value.trim());if(error)throw error;message('Si ce compte existe, un lien de réinitialisation vient d’être envoyé.');}
+    catch{message('Impossible d’envoyer le lien de réinitialisation pour le moment.');}finally{button.disabled=false;}
+   };
+   recoveryForm.onsubmit=async event=>{
+    event.preventDefault();const button=event.currentTarget.querySelector('button');button.disabled=true;
+    try{const {error}=await updatePassword(event.currentTarget.elements.password.value);if(error)throw error;location.hash='';message('Mot de passe mis à jour. Connecte-toi avec ton compte.');}
+    catch{message('Lien expiré ou modification impossible. Demande un nouveau lien.');}finally{button.disabled=false;}
    };
   }
   content.focus();
+ }
+ function gateNavigation(event){
+  if(!configured||user)return;
+  const target=event.target.closest?.('button,a,input,select,textarea,summary');
+  if(!target||target.closest('.account-page'))return;
+  if(target.id==='accountButton'||target.id==='profileButton')return;
+  event.preventDefault();event.stopPropagation();announce('Connecte-toi avec Google pour accéder à la formation.');renderAccount();
+ }
+ async function initAuth(){
+  if(!configured){authChecked=true;return;}
+  try{
+   const c=await getClient();
+   const {data}=await c.auth.getSession();
+   authChecked=true;
+   if(data.session)await loadAccount(data.session);else renderAccount();
+   c.auth.onAuthStateChange((_event,session)=>{if(session?.user)void loadAccount(session);else if(authChecked)logout();});
+  }catch{authChecked=true;announce('Connexion indisponible. Vérifie la configuration Supabase.');renderAccount();}
  }
 
  const bar=document.createElement('div');bar.className='account-status';bar.id='accountStatus';bar.setAttribute('role','status');document.querySelector('.main').insertBefore(bar,content);announce(status);
@@ -103,5 +143,7 @@
  document.getElementById('profileButton').setAttribute('aria-label','Ouvrir mon compte élève');
  window.addEventListener('beforeunload',e=>{if(dirty||saving){e.preventDefault();e.returnValue='';}});
  window.addEventListener('online',()=>{if(dirty){blocked=false;void flush();}});
+ document.addEventListener('click',gateNavigation,true);
  window.DjoniaAccounts={render:renderAccount,flush,loadAccount,logout,getClient};
+ void initAuth();
 })();

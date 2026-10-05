@@ -47,8 +47,11 @@ function createSite({ storageDisabled = false, accountClient = null } = {}) {
     });
   }
   if(accountClient) window.supabase={createClient:()=>accountClient};
+  const accountConfig = accountClient
+    ? 'window.DJONIA_ACCOUNT_CONFIG={url:"https://test.supabase.co",publishableKey:"sb_publishable_test"};'
+    : 'window.DJONIA_ACCOUNT_CONFIG={url:"",publishableKey:""};';
   const source = ["course-content.js", "app.js", "course-enrichment.js", "fundednext.js", "account-config.js", "accounts.js"]
-    .map(filename => `${filename === "account-config.js" && accountClient ? 'window.DJONIA_ACCOUNT_CONFIG={url:"https://test.supabase.co",publishableKey:"sb_publishable_test"};' : read(filename)}\n//# sourceURL=${filename}`)
+    .map(filename => `${filename === "account-config.js" ? accountConfig : read(filename)}\n//# sourceURL=${filename}`)
     .join("\n;\n");
   window.eval(source);
   return window;
@@ -446,19 +449,25 @@ test('FundedNext : navigation, sélection, validation et retour accueil', () => 
 });
 
 test('Comptes : mode Supabase configuré et deux indicateurs séparés',()=>{
- const w=createSite();try{w.document.querySelector('#accountButton').click();assert.match(w.document.querySelector('.account-page').textContent,/Connexion ou création de compte/);assert.equal(w.document.querySelectorAll('.account-page progress').length,2);assert.ok(w.document.querySelector('#accountEmailForm'));}finally{w.close();}
+ const w=createSite({accountClient:mockAccountServer()});try{w.document.querySelector('#accountButton').click();const page=w.document.querySelector('.account-page');assert.match(page.textContent,/Connexion obligatoire/);assert.equal(page.querySelectorAll('progress').length,2);assert.ok(page.querySelector('#accountGoogleLogin'));assert.ok(page.querySelector('#accountResetForm'));assert.equal(page.querySelector('#accountHome'),null);}finally{w.close();}
 });
 function mockAccountServer(){
  const records=new Map();let identity='A',fail=false;
  return {records,setIdentity:id=>{identity=id;},setFail:value=>{fail=value;},
   from:()=>({select:()=>({eq:(_k,id)=>({maybeSingle:async()=>({data:records.get(id)||null,error:null})})})}),
   rpc:async(_name,args)=>{if(fail)return {error:Error('offline')};const old=records.get(identity)||{revision:0};if(old.revision!==args.expected_revision)return {error:Error('conflict')};const revision=old.revision+1;records.set(identity,{payload:JSON.parse(JSON.stringify(args.new_payload)),revision});return {data:revision,error:null};},
-  auth:{signOut:async()=>({error:null})}
+  auth:{
+   getSession:async()=>({data:{session:null},error:null}),
+   onAuthStateChange:()=>({data:{subscription:{unsubscribe:()=>{}}}}),
+   signInWithOAuth:async()=>({data:{},error:null}),
+   resetPasswordForEmail:async()=>({data:{},error:null}),
+   updateUser:async()=>({data:{},error:null}),
+   signOut:async()=>({error:null})
+  }
  };
 }
-test('Comptes : A et B isolés, invité non importé, journal et retour au parcours',async()=>{
+test('Comptes : A et B isolés, journal et retour au parcours',async()=>{
  const server=mockAccountServer(),w=createSite({accountClient:server});try{
-  w.document.querySelector('#moduleList [data-module="1"]').click();w.document.querySelector('.lesson-complete').click();
   await w.DjoniaAccounts.getClient();await w.DjoniaAccounts.loadAccount({user:{id:'A',email:'a@example.test'}});
   assert.match(w.document.querySelector('.account-metrics').textContent,/0\/150/);
   w.document.querySelector('#moduleList [data-module="2"]').click();w.document.querySelector('.lesson-complete').click();
