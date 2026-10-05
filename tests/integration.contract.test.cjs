@@ -10,7 +10,7 @@ const styles = read("styles.css");
 
 test("les scripts se chargent dans l’ordre contenu → application → enrichissement", () => {
   const scripts = Array.from(html.matchAll(/<script\s+src="([^"]+)"/g), match => match[1]);
-  assert.deepEqual(scripts, ["course-content.js", "app.js", "course-enrichment.js", "fundednext.js", "account-config.js", "accounts.js"]);
+  assert.deepEqual(scripts, ["course-content.js", "content-protection.js", "app.js", "course-enrichment.js", "fundednext.js", "account-config.js", "accounts.js"]);
 });
 
 test("tous les contrôles permanents ont une liaison de clic ou de changement", () => {

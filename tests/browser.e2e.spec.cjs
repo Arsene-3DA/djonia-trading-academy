@@ -49,7 +49,7 @@ test("recherche, filtres, calculateurs, examens et thème fonctionnent", async (
   await page.getByLabel("Niveau").selectOption("4");
   await expect(page.locator(".result-card")).not.toHaveCount(0);
 
-  await page.locator(".dashboard-link").click();
+  await page.locator('[data-view="dashboard"]').click();
   await page.locator("#capital").fill("10000");
   await page.locator("#riskPct").fill("1");
   await page.locator("#stopDistance").fill("50");
