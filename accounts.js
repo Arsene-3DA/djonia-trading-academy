@@ -60,7 +60,7 @@
    const {error}=await c.auth.signInWithOAuth({provider:'google',options:{redirectTo:location.href.split('#')[0]}});
    if(error)throw error;
    announce('Redirection vers Google…');
-  }catch{announce('Connexion Google impossible. Vérifie la configuration Supabase et Google OAuth.');renderAccount();}
+  }catch(error){announce(`Connexion Google impossible : ${error?.message||'vérifie Supabase, Google OAuth et les URL de redirection.'}`);renderAccount();}
  }
  async function sendPasswordReset(email){
   const c=await getClient();
@@ -133,7 +133,7 @@
    authChecked=true;
    if(data.session)await loadAccount(data.session);else renderAccount();
    c.auth.onAuthStateChange((_event,session)=>{if(session?.user)void loadAccount(session);else if(authChecked)logout();});
-  }catch{authChecked=true;announce('Connexion indisponible. Vérifie la configuration Supabase.');renderAccount();}
+  }catch(error){authChecked=true;announce(`Connexion indisponible : ${error?.message||'vérifie la configuration Supabase.'}`);renderAccount();}
  }
 
  const bar=document.createElement('div');bar.className='account-status';bar.id='accountStatus';bar.setAttribute('role','status');document.querySelector('.main').insertBefore(bar,content);announce(status);
