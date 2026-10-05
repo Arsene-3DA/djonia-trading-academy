@@ -445,8 +445,8 @@ test('FundedNext : navigation, sélection, validation et retour accueil', () => 
  }finally{w.close();}
 });
 
-test('Comptes : mode non configuré honnête et deux indicateurs séparés',()=>{
- const w=createSite();try{w.document.querySelector('#accountButton').click();assert.match(w.document.querySelector('.account-page').textContent,/attendent leur activation/);assert.equal(w.document.querySelectorAll('.account-page progress').length,2);assert.equal(w.document.querySelector('#accountEmailForm'),null);}finally{w.close();}
+test('Comptes : mode Supabase configuré et deux indicateurs séparés',()=>{
+ const w=createSite();try{w.document.querySelector('#accountButton').click();assert.match(w.document.querySelector('.account-page').textContent,/Connexion ou création de compte/);assert.equal(w.document.querySelectorAll('.account-page progress').length,2);assert.ok(w.document.querySelector('#accountEmailForm'));}finally{w.close();}
 });
 function mockAccountServer(){
  const records=new Map();let identity='A',fail=false;
