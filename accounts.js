@@ -50,7 +50,16 @@
   if(!configured)throw Error('Configuration Supabase manquante.');
   if(!/^https:\/\/[a-z0-9-]+\.supabase\.co\/?$/i.test(config.url))throw Error('URL Supabase invalide.');
   if(config.publishableKey.startsWith('sb_secret_'))throw Error('Utilise uniquement la clé publique publishable.');
-  if(!window.supabase) await new Promise((resolve,reject)=>{const script=document.createElement('script');script.src='https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2.117.2/dist/umd/supabase.js';script.onload=resolve;script.onerror=()=>{script.remove();reject(Error('Impossible de charger le service de connexion.'));};document.head.append(script);});
+  if(!window.supabase) await new Promise((resolve,reject)=>{
+   const script=document.createElement('script');let done=false;
+   const finish=callback=>{if(done)return;done=true;clearTimeout(timer);callback();};
+   const timer=setTimeout(()=>{script.remove();finish(()=>reject(Error('Le service de connexion met trop de temps à répondre. Recharge la page ou réessaie.')));},8000);
+   script.async=true;
+   script.src='https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2.117.2/dist/umd/supabase.js';
+   script.onload=()=>finish(resolve);
+   script.onerror=()=>{script.remove();finish(()=>reject(Error('Impossible de charger le service de connexion.')));};
+   document.head.append(script);
+  });
   client=window.supabase.createClient(config.url,config.publishableKey,{auth:{persistSession:true,autoRefreshToken:true,detectSessionInUrl:true}});
   return client;
  }
@@ -127,6 +136,7 @@
  }
  async function initAuth(){
   if(!configured){authChecked=true;return;}
+  renderAccount();
   try{
    const c=await getClient();
    const {data}=await c.auth.getSession();
