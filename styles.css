@@ -58,10 +58,13 @@ body {
   font-size: 16px;
   line-height: 1.62;
   font-variant-numeric: tabular-nums;
+  -webkit-user-select: none;
+  user-select: none;
 }
 body.menu-open { overflow: hidden; }
 
 button, input, select, textarea { font: inherit; }
+input, textarea, select { -webkit-user-select: text; user-select: text; }
 button { color: inherit; }
 a { color: inherit; }
 button:focus-visible, input:focus-visible, select:focus-visible, textarea:focus-visible, summary:focus-visible, a:focus-visible {
