@@ -7,7 +7,8 @@
  const localRead=safeStorage.read.bind(safeStorage),localWrite=safeStorage.write.bind(safeStorage);
  let client=null,user=null,cache=clone(defaults),revision=0,dirty=false,saving=false,blocked=false,ready=false,epoch=0,authChecked=false;
  let status='Connexion requise pour accéder à la formation';
- const configured=!!(config.url&&config.publishableKey);
+ // Réactivation : enabled: true dans account-config.js.
+ const configured=config.enabled===true&&!!(config.url&&config.publishableKey);
  function announce(message){status=message;document.getElementById('accountStatus').textContent=message;}
  function hydrate(data){
   state.completedLessons=new Set(Array.isArray(data.djoniaCompletedLessons)?data.djoniaCompletedLessons:[]);
@@ -148,7 +149,9 @@
   }catch(error){authChecked=true;announce(`Connexion indisponible : ${error?.message||'vérifie la configuration Supabase.'}`);renderAccount();}
  }
 
+ if(!configured){document.getElementById('accountButton').hidden=true;return;}
  const bar=document.createElement('div');bar.className='account-status';bar.id='accountStatus';bar.setAttribute('role','status');document.querySelector('.main').insertBefore(bar,content);announce(status);
+ document.getElementById('accountButton').hidden=false;
  document.getElementById('accountButton').onclick=renderAccount;
  document.getElementById('profileButton').addEventListener('click',renderAccount);
  document.getElementById('profileButton').innerHTML='<span aria-hidden="true">◎</span><span class="profile-copy">Mon compte<small>Parcours personnel</small></span>';

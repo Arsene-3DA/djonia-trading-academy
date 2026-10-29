@@ -28,7 +28,7 @@ function setValue(window, selector, value) {
   return element;
 }
 
-function createSite({ storageDisabled = false, accountClient = null } = {}) {
+function createSite({ storageDisabled = false, accountClient = null, useAccountConfigFile = false } = {}) {
   const window = new Window({ url: "http://djonia.test/" });
   const html = read("index.html").replace(/<script\b[^>]*><\/script>/gi, "");
   window.document.documentElement.innerHTML = html;
@@ -47,9 +47,11 @@ function createSite({ storageDisabled = false, accountClient = null } = {}) {
     });
   }
   if(accountClient) window.supabase={createClient:()=>accountClient};
-  const accountConfig = accountClient
-    ? 'window.DJONIA_ACCOUNT_CONFIG={url:"https://test.supabase.co",publishableKey:"sb_publishable_test"};'
-    : 'window.DJONIA_ACCOUNT_CONFIG={url:"",publishableKey:""};';
+  const accountConfig = useAccountConfigFile
+    ? read("account-config.js")
+    : accountClient
+    ? 'window.DJONIA_ACCOUNT_CONFIG={enabled:true,url:"https://test.supabase.co",publishableKey:"sb_publishable_test"};'
+    : 'window.DJONIA_ACCOUNT_CONFIG={enabled:false,url:"",publishableKey:""};';
   const source = ["course-content.js", "app.js", "course-enrichment.js", "fundednext.js", "account-config.js", "accounts.js"]
     .map(filename => `${filename === "account-config.js" ? accountConfig : read(filename)}\n//# sourceURL=${filename}`)
     .join("\n;\n");
@@ -224,8 +226,9 @@ test("intégration du tableau de bord : navigation, recherche, filtres, thème e
     document.querySelector('#moduleList [data-module="10"]').click();
 
     document.querySelector("#profileButton").click();
-    assert.ok(document.querySelector(".account-page"), "le bouton de profil ouvre le compte élève");
-    document.querySelector("#accountHome").click();
+    assert.ok(document.querySelector(".hero"), "en mode invité, le profil ramène à l’accueil");
+    assert.equal(document.querySelector(".account-page"), null);
+    assert.equal(document.querySelector("#accountStatus"), null);
     document.querySelector("#continueButton").click();
     assert.match(cleanText(document.querySelector(".module-kicker").textContent), /Module 1\/30/);
     document.querySelector(".dashboard-link").click();
@@ -448,6 +451,27 @@ test('FundedNext : navigation, sélection, validation et retour accueil', () => 
  }finally{w.close();}
 });
 
+test('Comptes désactivés : accès immédiat et progression dans le navigateur',()=>{
+ const source=read('account-config.js');
+ assert.match(source,/enabled:\s*false,/);
+ assert.match(source,/publishableKey:/);
+ assert.doesNotMatch(source,/sb_secret_/);
+ const w=createSite({useAccountConfigFile:true});try{
+  const d=w.document;
+  assert.ok(d.querySelector('.hero'));
+  assert.equal(d.querySelector('#accountStatus'),null);
+  assert.equal(d.querySelector('#accountGoogleLogin'),null);
+  assert.equal(d.querySelector('#accountButton').hidden,true);
+  assert.match(d.querySelector('#profileButton').textContent,/Mon parcours/);
+  assert.doesNotMatch(d.body.textContent,/Connexion obligatoire/);
+  d.querySelector('#moduleList [data-module="1"]').click();
+  assert.match(cleanText(d.querySelector('.module-kicker').textContent),/Module 1\/30/);
+  d.querySelector('.lesson-complete').click();
+  assert.deepEqual(JSON.parse(w.localStorage.getItem('djoniaCompletedLessons')),['1:0']);
+  d.querySelector('#completeButton').click();
+  assert.equal(d.querySelector('#toast').textContent,'Leçons terminées.');
+ }finally{w.close();}
+});
 test('Comptes : mode Supabase configuré et deux indicateurs séparés',()=>{
  const w=createSite({accountClient:mockAccountServer()});try{w.document.querySelector('#accountButton').click();const page=w.document.querySelector('.account-page');assert.match(page.textContent,/Connexion obligatoire/);assert.equal(page.querySelectorAll('progress').length,2);assert.ok(page.querySelector('#accountGoogleLogin'));assert.ok(page.querySelector('#accountResetForm'));assert.equal(page.querySelector('#accountHome'),null);}finally{w.close();}
 });

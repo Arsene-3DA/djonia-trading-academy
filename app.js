@@ -1476,7 +1476,8 @@ function openModule(id) {
     module.lessons.forEach((_, i) => markDone ? state.completedLessons.add(lessonKey(id, i)) : state.completedLessons.delete(lessonKey(id, i)));
     if (markDone) state.completed.add(id); else state.completed.delete(id);
     saveProgress();
-    toast(state.completed.has(id) ? "Leçons terminées — évaluation distincte dans Mon compte." : "Validation retirée.");
+    const accountsOn=window.DJONIA_ACCOUNT_CONFIG?.enabled===true;
+    toast(state.completed.has(id) ? (accountsOn ? "Leçons terminées — évaluation distincte dans Mon compte." : "Leçons terminées.") : "Validation retirée.");
     openModule(id);
   });
   document.getElementById("nextLesson")?.addEventListener("click", () => openModule(id + 1));
