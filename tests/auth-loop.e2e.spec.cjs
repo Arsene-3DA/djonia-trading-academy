@@ -1,6 +1,15 @@
 const { test, expect } = require("@playwright/test");
 
 test.beforeEach(async ({ page }) => {
+  await page.route("**/account-config.js", async route => {
+    const response = await route.fetch();
+    const body = (await response.text()).replace(/enabled:\s*false(\s*,)/, "enabled: true$1");
+    await route.fulfill({
+      status: response.status(),
+      contentType: "text/javascript; charset=utf-8",
+      body
+    });
+  });
   await page.addInitScript(() => {
     const listeners = new Set();
     const records = new Map();
