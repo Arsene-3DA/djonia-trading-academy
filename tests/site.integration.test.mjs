@@ -490,6 +490,61 @@ test('Comptes : échec réseau visible puis nouvelle tentative sans perte',async
   assert.deepEqual(server.records.get('A').payload.djoniaCompletedLessons,['1:0']);
  }finally{w.close();}
 });
+function mockAuthThatReemitsSignOut(){
+ const listeners=new Set();const records=new Map();let signOuts=0;
+ return {records,get signOuts(){return signOuts;},emit(event,session){for(const cb of [...listeners])cb(event,session);},
+  from:()=>({select:()=>({eq:(_k,id)=>({maybeSingle:async()=>({data:records.get(id)||null,error:null})})})}),
+  rpc:async(_name,args)=>{const old=records.get('A')||{revision:0};if(old.revision!==args.expected_revision)return {error:Error('conflict')};const revision=old.revision+1;records.set('A',{payload:JSON.parse(JSON.stringify(args.new_payload)),revision});return {data:revision,error:null};},
+  auth:{
+   getSession:async()=>({data:{session:null},error:null}),
+   onAuthStateChange(callback){listeners.add(callback);queueMicrotask(()=>callback('INITIAL_SESSION',null));return {data:{subscription:{unsubscribe(){listeners.delete(callback);}}}};},
+   signInWithOAuth:async()=>({data:{},error:null}),
+   resetPasswordForEmail:async()=>({data:{},error:null}),
+   updateUser:async()=>({data:{},error:null}),
+   signOut:async()=>{signOuts+=1;if(signOuts>5)throw Error(`boucle signOut (${signOuts})`);for(const cb of [...listeners])cb('SIGNED_OUT',null);return {error:null};}
+  }
+ };
+}
+test('Comptes : une visite déconnectée s’affiche sans boucle de déconnexion',async()=>{
+ const server=mockAuthThatReemitsSignOut(),w=createSite({accountClient:server});try{
+  await new Promise(r=>setTimeout(r,0));
+  assert.equal(server.signOuts,0);
+  assert.ok(w.document.body);
+  assert.equal(w.document.querySelectorAll('#moduleList [data-module]').length,30);
+  assert.match(cleanText(w.document.querySelector('.account-page').textContent),/Connexion obligatoire/);
+  assert.ok(w.document.querySelector('#accountGoogleLogin'));
+ }finally{w.close();}
+});
+test('Comptes : la déconnexion explicite efface la progression et ne signe la sortie qu’une fois',async()=>{
+ const server=mockAuthThatReemitsSignOut(),w=createSite({accountClient:server});try{
+  await new Promise(r=>setTimeout(r,0));
+  assert.equal(server.signOuts,0);
+  await w.DjoniaAccounts.loadAccount({user:{id:'A',email:'a@example.test'}});
+  w.document.querySelector('#moduleList [data-module="1"]').click();
+  w.document.querySelector('.lesson-complete').click();
+  await new Promise(r=>setTimeout(r,30));
+  await w.DjoniaAccounts.flush();
+  assert.match(w.document.getElementById('sidebarProgressCount').textContent,/1\/125/);
+  await w.DjoniaAccounts.logout();
+  assert.equal(server.signOuts,1);
+  assert.equal(w.document.querySelector('#accountLogout'),null);
+  assert.ok(w.document.querySelector('#accountGoogleLogin'));
+  assert.match(cleanText(w.document.querySelector('.account-page').textContent),/Connexion obligatoire/);
+  assert.match(w.document.getElementById('sidebarProgressCount').textContent,/0\/125/);
+ }finally{w.close();}
+});
+test('Comptes : une session retirée ailleurs déconnecte une seule fois',async()=>{
+ const server=mockAuthThatReemitsSignOut(),w=createSite({accountClient:server});try{
+  await new Promise(r=>setTimeout(r,0));
+  await w.DjoniaAccounts.loadAccount({user:{id:'A',email:'a@example.test'}});
+  assert.match(w.document.querySelector('.account-page').textContent,/a@example\.test/);
+  server.emit('SIGNED_OUT',null);
+  await new Promise(r=>setTimeout(r,0));
+  assert.equal(server.signOuts,1);
+  assert.equal(w.document.querySelector('#accountLogout'),null);
+  assert.match(cleanText(w.document.querySelector('.account-page').textContent),/Connexion obligatoire/);
+ }finally{w.close();}
+});
 test('Comptes : un conflit ne remplace pas les données du deuxième appareil',async()=>{
  const server=mockAccountServer(),w=createSite({accountClient:server});try{
   await w.DjoniaAccounts.getClient();await w.DjoniaAccounts.loadAccount({user:{id:'A',email:'a@example.test'}});
