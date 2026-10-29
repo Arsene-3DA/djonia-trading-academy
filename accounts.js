@@ -142,7 +142,9 @@
    const {data}=await c.auth.getSession();
    authChecked=true;
    if(data.session)await loadAccount(data.session);else renderAccount();
-   c.auth.onAuthStateChange((_event,session)=>{if(session?.user)void loadAccount(session);else if(authChecked)logout();});
+   // Session nulle sans compte chargé : ne pas appeler logout(). signOut réémet SIGNED_OUT
+   // via _removeSession et relancerait ce callback sans fin (page figée hors connexion).
+   c.auth.onAuthStateChange((_event,session)=>{if(session?.user)void loadAccount(session);else if(authChecked&&user)logout();});
   }catch(error){authChecked=true;announce(`Connexion indisponible : ${error?.message||'vérifie la configuration Supabase.'}`);renderAccount();}
  }
 
